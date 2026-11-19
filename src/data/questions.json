@@ -1,0 +1,5616 @@
+[
+  {
+    "id": "c-programming-001",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "C program entry point?",
+    "options": [
+      "main()",
+      "start()",
+      "init()",
+      "run()"
+    ],
+    "correctIndex": 0,
+    "explanation": "A hosted C program starts at main()."
+  },
+  {
+    "id": "c-programming-002",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "Header for printf?",
+    "options": [
+      "stdio.h",
+      "stdlib.h",
+      "string.h",
+      "math.h"
+    ],
+    "correctIndex": 0,
+    "explanation": "stdio.h declares standard input/output functions."
+  },
+  {
+    "id": "c-programming-003",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "Address-of operator?",
+    "options": [
+      "&",
+      "*",
+      "%",
+      "->"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unary & obtains an object's address."
+  },
+  {
+    "id": "c-programming-004",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "sizeof(char) equals?",
+    "options": [
+      "1 byte",
+      "2 bytes",
+      "4 bytes",
+      "8 bytes always"
+    ],
+    "correctIndex": 0,
+    "explanation": "sizeof(char) is defined as one C byte."
+  },
+  {
+    "id": "c-programming-005",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "Loop that checks before body?",
+    "options": [
+      "while",
+      "do-while",
+      "Both run once first",
+      "Neither"
+    ],
+    "correctIndex": 0,
+    "explanation": "while checks its condition before each iteration."
+  },
+  {
+    "id": "c-programming-006",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "printf format for int?",
+    "options": [
+      "%d",
+      "%f",
+      "%c",
+      "%s"
+    ],
+    "correctIndex": 0,
+    "explanation": "%d formats a decimal integer."
+  },
+  {
+    "id": "c-programming-007",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "Array index starts at?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Compiler choice"
+    ],
+    "correctIndex": 0,
+    "explanation": "C arrays use zero-based indexing."
+  },
+  {
+    "id": "c-programming-008",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "Read-only qualifier?",
+    "options": [
+      "const",
+      "static",
+      "volatile",
+      "extern"
+    ],
+    "correctIndex": 0,
+    "explanation": "const prevents modification through that lvalue."
+  },
+  {
+    "id": "c-programming-009",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "malloc returns on success?",
+    "options": [
+      "Allocated-memory pointer",
+      "Integer index",
+      "File handle",
+      "char always"
+    ],
+    "correctIndex": 0,
+    "explanation": "malloc returns void* to allocated storage."
+  },
+  {
+    "id": "c-programming-010",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "Release allocated memory?",
+    "options": [
+      "free()",
+      "delete()",
+      "release()",
+      "remove()"
+    ],
+    "correctIndex": 0,
+    "explanation": "free releases dynamically allocated storage."
+  },
+  {
+    "id": "c-programming-011",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "Statement terminator?",
+    "options": [
+      "; ",
+      ":",
+      " . ",
+      ","
+    ],
+    "correctIndex": 0,
+    "explanation": "Most C statements end with a semicolon."
+  },
+  {
+    "id": "c-programming-012",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "A pointer stores?",
+    "options": [
+      "An address",
+      "An array always",
+      "A data type name",
+      "A file name"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pointers hold object/function addresses or null."
+  },
+  {
+    "id": "c-programming-013",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "Logical AND operator?",
+    "options": [
+      "&&",
+      "&",
+      "||",
+      "!"
+    ],
+    "correctIndex": 0,
+    "explanation": "&& evaluates logical conjunction."
+  },
+  {
+    "id": "c-programming-014",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "Recursion means?",
+    "options": [
+      "Function calls itself",
+      "Loop without condition",
+      "Pointer to array",
+      "Compiler warning"
+    ],
+    "correctIndex": 0,
+    "explanation": "A recursive function calls itself."
+  },
+  {
+    "id": "c-programming-015",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "Static local variable retains value between calls?",
+    "options": [
+      "Yes",
+      "No",
+      "Only in main",
+      "Only with const"
+    ],
+    "correctIndex": 0,
+    "explanation": "Block-scope static objects have static storage duration."
+  },
+  {
+    "id": "c-programming-016",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "strlen returns?",
+    "options": [
+      "Characters before null terminator",
+      "Buffer capacity",
+      "Bytes including terminator",
+      "Word count"
+    ],
+    "correctIndex": 0,
+    "explanation": "strlen counts up to but not including the null byte."
+  },
+  {
+    "id": "c-programming-017",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "C99 single-line comment?",
+    "options": [
+      "// comment",
+      "<!-- -->",
+      "# comment",
+      "** comment **"
+    ],
+    "correctIndex": 0,
+    "explanation": "C99 supports // comments."
+  },
+  {
+    "id": "c-programming-018",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "7 / 2 with int operands?",
+    "options": [
+      "3",
+      "3.5",
+      "4",
+      "Error"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integer division discards the fractional part."
+  },
+  {
+    "id": "c-programming-019",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "Exit nearest loop?",
+    "options": [
+      "break",
+      "continue",
+      "stop",
+      "goto only"
+    ],
+    "correctIndex": 0,
+    "explanation": "break exits the nearest loop or switch."
+  },
+  {
+    "id": "c-programming-020",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "Bounded line input function?",
+    "options": [
+      "fgets()",
+      "gets()",
+      "puts()",
+      "strlen()"
+    ],
+    "correctIndex": 0,
+    "explanation": "fgets accepts a maximum buffer size."
+  },
+  {
+    "id": "c-programming-021",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "Null pointer means?",
+    "options": [
+      "No valid object/function target",
+      "First array item",
+      "Empty string necessarily",
+      "Constant integer"
+    ],
+    "correctIndex": 0,
+    "explanation": "A null pointer does not point to an object or function."
+  },
+  {
+    "id": "c-programming-022",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "Include header directive?",
+    "options": [
+      "#include",
+      "#define",
+      "#pragma",
+      "#ifdef"
+    ],
+    "correctIndex": 0,
+    "explanation": "#include requests inclusion of a file."
+  },
+  {
+    "id": "c-programming-023",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "sizeof returns?",
+    "options": [
+      "Size in bytes",
+      "Always element count",
+      "Address",
+      "Bits always"
+    ],
+    "correctIndex": 0,
+    "explanation": "sizeof yields size in bytes."
+  },
+  {
+    "id": "c-programming-024",
+    "subject": "C Programming",
+    "difficulty": "hard",
+    "question": "Structure member via value uses?",
+    "options": [
+      " . ",
+      "->",
+      "::",
+      "*"
+    ],
+    "correctIndex": 0,
+    "explanation": "The dot operator accesses a member of a structure expression."
+  },
+  {
+    "id": "c-programming-025",
+    "subject": "C Programming",
+    "difficulty": "easy",
+    "question": "Compare C strings?",
+    "options": [
+      "strcmp()",
+      "strcpy()",
+      "strcat()",
+      "strlen()"
+    ],
+    "correctIndex": 0,
+    "explanation": "strcmp compares strings lexicographically."
+  },
+  {
+    "id": "c-programming-026",
+    "subject": "C Programming",
+    "difficulty": "medium",
+    "question": "calloc differs from malloc because it?",
+    "options": [
+      "Initializes allocated bytes to zero",
+      "Always allocates stack memory",
+      "Returns int",
+      "Frees memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "calloc allocates and zero-initializes the requested bytes."
+  },
+  {
+    "id": "c-----oop-001",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Bundle data and methods together?",
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Compilation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Encapsulation combines state and behavior."
+  },
+  {
+    "id": "c-----oop-002",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Dynamic allocation operator?",
+    "options": [
+      "new",
+      "alloc",
+      "create",
+      "malloc keyword"
+    ],
+    "correctIndex": 0,
+    "explanation": "new allocates storage and constructs the object."
+  },
+  {
+    "id": "c-----oop-003",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "Constructor name is?",
+    "options": [
+      "Same as class",
+      "Always void",
+      "Any name",
+      "Always int"
+    ],
+    "correctIndex": 0,
+    "explanation": "A constructor shares its class name and has no return type."
+  },
+  {
+    "id": "c-----oop-004",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Same interface, different implementations?",
+    "options": [
+      "Polymorphism",
+      "Encapsulation",
+      "Tokenization",
+      "Linking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Polymorphism allows different behavior through a common interface."
+  },
+  {
+    "id": "c-----oop-005",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Most restrictive access here?",
+    "options": [
+      "private",
+      "public",
+      "protected",
+      "global"
+    ],
+    "correctIndex": 0,
+    "explanation": "private members are accessible to class members and friends."
+  },
+  {
+    "id": "c-----oop-006",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "Scope resolution operator?",
+    "options": [
+      "::",
+      "->",
+      ".",
+      "##"
+    ],
+    "correctIndex": 0,
+    "explanation": ":: qualifies names by scope."
+  },
+  {
+    "id": "c-----oop-007",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Class-level member function?",
+    "options": [
+      "static member function",
+      "Destructor only",
+      "Copy constructor only",
+      "Friend constructor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Static member functions belong to the class."
+  },
+  {
+    "id": "c-----oop-008",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Runtime polymorphism enabled by?",
+    "options": [
+      "virtual function",
+      "Macro",
+      "Garbage collector",
+      "Multiple main functions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Virtual dispatch chooses an override based on dynamic type."
+  },
+  {
+    "id": "c-----oop-009",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "An 'is-a' relationship commonly means?",
+    "options": [
+      "Inheritance",
+      "Composition",
+      "Aggregation only",
+      "Casting"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inheritance models specialization."
+  },
+  {
+    "id": "c-----oop-010",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Standard output stream?",
+    "options": [
+      "std::cout",
+      "std::cin",
+      "std::input",
+      "std::read"
+    ],
+    "correctIndex": 0,
+    "explanation": "std::cout is the standard output stream."
+  },
+  {
+    "id": "c-----oop-011",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Overloading means?",
+    "options": [
+      "Same name with different parameter lists",
+      "Redefining a variable",
+      "Recursive call",
+      "Changing return type alone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Overloads differ in their parameter lists."
+  },
+  {
+    "id": "c-----oop-012",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "Can overload by return type alone?",
+    "options": [
+      "No",
+      "Yes always",
+      "Only templates",
+      "Only main"
+    ],
+    "correctIndex": 0,
+    "explanation": "Return type alone cannot distinguish overloads."
+  },
+  {
+    "id": "c-----oop-013",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Object cleanup function?",
+    "options": [
+      "Destructor",
+      "Constructor",
+      "Allocator",
+      "operator()"
+    ],
+    "correctIndex": 0,
+    "explanation": "A destructor runs as an object's lifetime ends."
+  },
+  {
+    "id": "c-----oop-014",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Prevent further overriding?",
+    "options": [
+      "final",
+      "static",
+      "friend",
+      "mutable"
+    ],
+    "correctIndex": 0,
+    "explanation": "final disallows further overriding."
+  },
+  {
+    "id": "c-----oop-015",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "Class contains objects of another class?",
+    "options": [
+      "Composition",
+      "Overloading",
+      "Namespace",
+      "Inheritance only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Composition builds a class from member objects."
+  },
+  {
+    "id": "c-----oop-016",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Abstract class usually has?",
+    "options": [
+      "Pure virtual function",
+      "No functions",
+      "Only static data",
+      "Always private constructor"
+    ],
+    "correctIndex": 0,
+    "explanation": "A class with a pure virtual function is abstract."
+  },
+  {
+    "id": "c-----oop-017",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Grant private access to function?",
+    "options": [
+      "friend",
+      "public",
+      "extern",
+      "mutable"
+    ],
+    "correctIndex": 0,
+    "explanation": "Friend declarations grant specified access."
+  },
+  {
+    "id": "c-----oop-018",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "this pointer refers to?",
+    "options": [
+      "Current object",
+      "Base class only",
+      "Next object",
+      "Class-name string"
+    ],
+    "correctIndex": 0,
+    "explanation": "this refers to the current instance."
+  },
+  {
+    "id": "c-----oop-019",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Resizable standard sequence container?",
+    "options": [
+      "std::vector",
+      "std::map",
+      "std::queue",
+      "std::stack only"
+    ],
+    "correctIndex": 0,
+    "explanation": "vector is a dynamic contiguous sequence."
+  },
+  {
+    "id": "c-----oop-020",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Header for std::string?",
+    "options": [
+      "<string>",
+      "<text>",
+      "<iostream> only",
+      "<array>"
+    ],
+    "correctIndex": 0,
+    "explanation": "The C++ string class is declared in <string>."
+  },
+  {
+    "id": "c-----oop-021",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "Multiple inheritance means?",
+    "options": [
+      "Deriving from multiple base classes",
+      "Many overloads",
+      "Many objects",
+      "Recursive method"
+    ],
+    "correctIndex": 0,
+    "explanation": "A class may have multiple direct base classes."
+  },
+  {
+    "id": "c-----oop-022",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Checked downcast for polymorphic types?",
+    "options": [
+      "dynamic_cast",
+      "reinterpret_cast",
+      "const_cast",
+      "C-style cast always"
+    ],
+    "correctIndex": 0,
+    "explanation": "dynamic_cast can check a polymorphic downcast at runtime."
+  },
+  {
+    "id": "c-----oop-023",
+    "subject": "C++ / OOP",
+    "difficulty": "medium",
+    "question": "Templates support?",
+    "options": [
+      "Generic programming",
+      "Routing",
+      "Database indexing",
+      "Manual leaks"
+    ],
+    "correctIndex": 0,
+    "explanation": "Templates parameterize code by types or values."
+  },
+  {
+    "id": "c-----oop-024",
+    "subject": "C++ / OOP",
+    "difficulty": "hard",
+    "question": "Hide implementation details?",
+    "options": [
+      "Abstraction",
+      "Duplication",
+      "Serialization",
+      "Fragmentation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abstraction exposes essentials while hiding implementation."
+  },
+  {
+    "id": "c-----oop-025",
+    "subject": "C++ / OOP",
+    "difficulty": "easy",
+    "question": "Copy constructor initializes from?",
+    "options": [
+      "Another object of same class",
+      "An integer only",
+      "A destructor",
+      "A file"
+    ],
+    "correctIndex": 0,
+    "explanation": "A copy constructor initializes an object from another object."
+  },
+  {
+    "id": "java-001",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "Executes Java bytecode?",
+    "options": [
+      "JVM",
+      "javac only",
+      "Javadoc",
+      "JRE installer only"
+    ],
+    "correctIndex": 0,
+    "explanation": "The JVM executes bytecode."
+  },
+  {
+    "id": "java-002",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Class inheritance keyword?",
+    "options": [
+      "extends",
+      "implements",
+      "inherits",
+      "superclass"
+    ],
+    "correctIndex": 0,
+    "explanation": "extends specifies a superclass."
+  },
+  {
+    "id": "java-003",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "Conventional Java entry point?",
+    "options": [
+      "public static void main(String[] args)",
+      "start()",
+      "runMain()",
+      "init()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Java launcher uses the conventional main signature."
+  },
+  {
+    "id": "java-004",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "Primitive true/false type?",
+    "options": [
+      "boolean",
+      "bool",
+      "bit",
+      "Boolean only"
+    ],
+    "correctIndex": 0,
+    "explanation": "boolean is Java's primitive type."
+  },
+  {
+    "id": "java-005",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Collection forbidding duplicates?",
+    "options": [
+      "Set",
+      "List",
+      "ArrayList",
+      "Queue always"
+    ],
+    "correctIndex": 0,
+    "explanation": "Set models unique elements."
+  },
+  {
+    "id": "java-006",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "Prevent class subclassing?",
+    "options": [
+      "final",
+      "static",
+      "private",
+      "transient"
+    ],
+    "correctIndex": 0,
+    "explanation": "A final class cannot be extended."
+  },
+  {
+    "id": "java-007",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "Exception handler block?",
+    "options": [
+      "catch",
+      "throws",
+      "finalize",
+      "throwable"
+    ],
+    "correctIndex": 0,
+    "explanation": "catch handles matching exceptions."
+  },
+  {
+    "id": "java-008",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Invoke superclass constructor?",
+    "options": [
+      "super",
+      "this",
+      "base",
+      "parent"
+    ],
+    "correctIndex": 0,
+    "explanation": "super(...) invokes a superclass constructor."
+  },
+  {
+    "id": "java-009",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "Java source compiles to?",
+    "options": [
+      "Bytecode .class files",
+      "HTML",
+      "SQL",
+      "Assembly only"
+    ],
+    "correctIndex": 0,
+    "explanation": "javac commonly emits JVM bytecode."
+  },
+  {
+    "id": "java-010",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "Immutable string class?",
+    "options": [
+      "String",
+      "StringBuilder",
+      "ArrayList",
+      "StringBuffer"
+    ],
+    "correctIndex": 0,
+    "explanation": "String objects cannot be modified after creation."
+  },
+  {
+    "id": "java-011",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Implement an interface with?",
+    "options": [
+      "implements",
+      "extends only",
+      "interfaceOf",
+      "instanceof"
+    ],
+    "correctIndex": 0,
+    "explanation": "Classes use implements."
+  },
+  {
+    "id": "java-012",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "For object references, == compares?",
+    "options": [
+      "Reference identity",
+      "Always contents",
+      "Fields recursively",
+      "Class names only"
+    ],
+    "correctIndex": 0,
+    "explanation": "== checks whether references point to the same object."
+  },
+  {
+    "id": "java-013",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "ArrayList package?",
+    "options": [
+      "java.util",
+      "java.io",
+      "java.net",
+      "java.sql"
+    ],
+    "correctIndex": 0,
+    "explanation": "ArrayList belongs to java.util."
+  },
+  {
+    "id": "java-014",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Access within package and subclass rules?",
+    "options": [
+      "protected",
+      "private",
+      "transient",
+      "volatile"
+    ],
+    "correctIndex": 0,
+    "explanation": "protected supports package and subclass access."
+  },
+  {
+    "id": "java-015",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "Java instance methods are generally?",
+    "options": [
+      "Dynamically dispatched unless restricted",
+      "Always static",
+      "Always final",
+      "Never overridable"
+    ],
+    "correctIndex": 0,
+    "explanation": "Instance methods support runtime dispatch except restricted cases."
+  },
+  {
+    "id": "java-016",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "Common thread task interface?",
+    "options": [
+      "Runnable",
+      "Serializable",
+      "Cloneable",
+      "Comparable"
+    ],
+    "correctIndex": 0,
+    "explanation": "Runnable defines run()."
+  },
+  {
+    "id": "java-017",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Method overloading means?",
+    "options": [
+      "Same name, different parameter lists",
+      "Changing only access",
+      "Overriding a field",
+      "Same signature only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Overloaded methods differ in parameters."
+  },
+  {
+    "id": "java-018",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "Create an object with?",
+    "options": [
+      "new",
+      "make",
+      "alloc",
+      "class"
+    ],
+    "correctIndex": 0,
+    "explanation": "new creates and initializes an object."
+  },
+  {
+    "id": "java-019",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "Garbage collection reclaims?",
+    "options": [
+      "Unreachable heap objects",
+      "Source files",
+      "Class files always",
+      "Every open file"
+    ],
+    "correctIndex": 0,
+    "explanation": "GC can reclaim objects no longer reachable."
+  },
+  {
+    "id": "java-020",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Checked exception?",
+    "options": [
+      "IOException",
+      "NullPointerException",
+      "ArithmeticException",
+      "IndexOutOfBoundsException"
+    ],
+    "correctIndex": 0,
+    "explanation": "IOException is checked."
+  },
+  {
+    "id": "java-021",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "Current instance keyword?",
+    "options": [
+      "this",
+      "self",
+      "me",
+      "current"
+    ],
+    "correctIndex": 0,
+    "explanation": "this refers to the current object."
+  },
+  {
+    "id": "java-022",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "Compare String contents?",
+    "options": [
+      "equals()",
+      "==",
+      "same()",
+      "compareRef()"
+    ],
+    "correctIndex": 0,
+    "explanation": "String.equals compares character sequences."
+  },
+  {
+    "id": "java-023",
+    "subject": "Java",
+    "difficulty": "medium",
+    "question": "Exit nearest loop?",
+    "options": [
+      "break",
+      "continue",
+      "pass",
+      "next"
+    ],
+    "correctIndex": 0,
+    "explanation": "break terminates the nearest loop."
+  },
+  {
+    "id": "java-024",
+    "subject": "Java",
+    "difficulty": "hard",
+    "question": "Encapsulation commonly uses?",
+    "options": [
+      "Private fields and public methods",
+      "All public fields",
+      "Global variables",
+      "No methods"
+    ],
+    "correctIndex": 0,
+    "explanation": "Access control protects object state."
+  },
+  {
+    "id": "java-025",
+    "subject": "Java",
+    "difficulty": "easy",
+    "question": "JDK includes which development tool?",
+    "options": [
+      "javac",
+      "Heap only",
+      "Garbage collector only",
+      "Bytecode interpreter only"
+    ],
+    "correctIndex": 0,
+    "explanation": "JDK includes the Java compiler."
+  },
+  {
+    "id": "python-001",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "Python comment symbol?",
+    "options": [
+      "#",
+      "//",
+      "<!--",
+      "**"
+    ],
+    "correctIndex": 0,
+    "explanation": "Python comments begin with #."
+  },
+  {
+    "id": "python-002",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "Ordered mutable collection?",
+    "options": [
+      "list",
+      "tuple",
+      "frozenset",
+      "str"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lists preserve order and are mutable."
+  },
+  {
+    "id": "python-003",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "Function definition keyword?",
+    "options": [
+      "def",
+      "func",
+      "function",
+      "lambda only"
+    ],
+    "correctIndex": 0,
+    "explanation": "def introduces a function."
+  },
+  {
+    "id": "python-004",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "5 / 2 in Python 3 gives?",
+    "options": [
+      "2.5",
+      "2",
+      "3",
+      "Error"
+    ],
+    "correctIndex": 0,
+    "explanation": "/ performs true division."
+  },
+  {
+    "id": "python-005",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "Key-value collection?",
+    "options": [
+      "dict",
+      "set",
+      "tuple",
+      "range"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dictionaries map keys to values."
+  },
+  {
+    "id": "python-006",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "Exception handler keyword?",
+    "options": [
+      "except",
+      "catch",
+      "rescue",
+      "handle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Python uses try/except."
+  },
+  {
+    "id": "python-007",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "len([1,2,3]) returns?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The list contains three items."
+  },
+  {
+    "id": "python-008",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "Python null-like singleton?",
+    "options": [
+      "None",
+      "null",
+      "undefined",
+      "void"
+    ],
+    "correctIndex": 0,
+    "explanation": "None represents absence of a value."
+  },
+  {
+    "id": "python-009",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "Exponentiation operator?",
+    "options": [
+      "**",
+      "^",
+      "//",
+      "%%"
+    ],
+    "correctIndex": 0,
+    "explanation": "** raises a value to a power."
+  },
+  {
+    "id": "python-010",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "Conditional keyword?",
+    "options": [
+      "if",
+      "when",
+      "choose",
+      "switch"
+    ],
+    "correctIndex": 0,
+    "explanation": "if begins a conditional."
+  },
+  {
+    "id": "python-011",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "Iterate over an iterable?",
+    "options": [
+      "for",
+      "repeat-until",
+      "foreach keyword",
+      "loop"
+    ],
+    "correctIndex": 0,
+    "explanation": "for visits values from an iterable."
+  },
+  {
+    "id": "python-012",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "Tuple is typically?",
+    "options": [
+      "Immutable sequence",
+      "Always key-value storage",
+      "Unique-only collection",
+      "Mutable sequence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tuples are immutable sequences."
+  },
+  {
+    "id": "python-013",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "Convert numeric string to integer?",
+    "options": [
+      "int()",
+      "str()",
+      "parse()",
+      "floatstr()"
+    ],
+    "correctIndex": 0,
+    "explanation": "int('42') produces integer 42."
+  },
+  {
+    "id": "python-014",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "range(5) represents?",
+    "options": [
+      "0 through 4",
+      "1 through 5",
+      "Only 5",
+      "Always a list"
+    ],
+    "correctIndex": 0,
+    "explanation": "range(5) represents values 0–4."
+  },
+  {
+    "id": "python-015",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "Import a module?",
+    "options": [
+      "import",
+      "include",
+      "require",
+      "using"
+    ],
+    "correctIndex": 0,
+    "explanation": "import binds a module or its names."
+  },
+  {
+    "id": "python-016",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "lambda creates?",
+    "options": [
+      "Anonymous function expression",
+      "Class only",
+      "Loop",
+      "Package manager"
+    ],
+    "correctIndex": 0,
+    "explanation": "lambda creates a small anonymous function."
+  },
+  {
+    "id": "python-017",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "Add one item to list end?",
+    "options": [
+      "append()",
+      "add()",
+      "push_back()",
+      "insertEnd()"
+    ],
+    "correctIndex": 0,
+    "explanation": "append adds one item to the end."
+  },
+  {
+    "id": "python-018",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "Skip to next loop iteration?",
+    "options": [
+      "continue",
+      "break",
+      "return",
+      "pass only"
+    ],
+    "correctIndex": 0,
+    "explanation": "continue advances to the next iteration."
+  },
+  {
+    "id": "python-019",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "`is` tests?",
+    "options": [
+      "Object identity",
+      "Value equality always",
+      "Type conversion",
+      "Membership"
+    ],
+    "correctIndex": 0,
+    "explanation": "is tests identity."
+  },
+  {
+    "id": "python-020",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "Unique-item collection?",
+    "options": [
+      "set",
+      "list",
+      "tuple",
+      "string"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sets contain distinct hashable items."
+  },
+  {
+    "id": "python-021",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "**kwargs collects?",
+    "options": [
+      "Keyword arguments in a dictionary",
+      "Positional args in tuple",
+      "Return values",
+      "Modules"
+    ],
+    "correctIndex": 0,
+    "explanation": "kwargs captures extra keyword arguments."
+  },
+  {
+    "id": "python-022",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "Cleanup block?",
+    "options": [
+      "finally",
+      "except only",
+      "ensure",
+      "catch"
+    ],
+    "correctIndex": 0,
+    "explanation": "finally runs during normal or exceptional flow."
+  },
+  {
+    "id": "python-023",
+    "subject": "Python",
+    "difficulty": "medium",
+    "question": "List comprehension helps with?",
+    "options": [
+      "Concise list construction",
+      "Class declaration",
+      "File opening only",
+      "Package definition"
+    ],
+    "correctIndex": 0,
+    "explanation": "Comprehensions build lists from iterables."
+  },
+  {
+    "id": "python-024",
+    "subject": "Python",
+    "difficulty": "hard",
+    "question": "Standard JSON module?",
+    "options": [
+      "json",
+      "csv only",
+      "pickle only",
+      "xmlrpc only"
+    ],
+    "correctIndex": 0,
+    "explanation": "json parses and serializes JSON."
+  },
+  {
+    "id": "python-025",
+    "subject": "Python",
+    "difficulty": "easy",
+    "question": "pip manages?",
+    "options": [
+      "Python packages",
+      "Processes",
+      "SQL tables",
+      "Java bytecode"
+    ],
+    "correctIndex": 0,
+    "explanation": "pip installs and manages packages."
+  },
+  {
+    "id": "data-structures-001",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "LIFO structure?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stacks remove the most recently added item first."
+  },
+  {
+    "id": "data-structures-002",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "FIFO structure?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "Queues remove the earliest added item first."
+  },
+  {
+    "id": "data-structures-003",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Binary search average time?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1) always"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each comparison halves the search interval."
+  },
+  {
+    "id": "data-structures-004",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "Root-left-right traversal?",
+    "options": [
+      "Preorder",
+      "Inorder",
+      "Postorder",
+      "Level order"
+    ],
+    "correctIndex": 0,
+    "explanation": "Preorder visits root before subtrees."
+  },
+  {
+    "id": "data-structures-005",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "Nodes connected by links?",
+    "options": [
+      "Linked list",
+      "Static array",
+      "Hash value",
+      "Integer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linked-list nodes link to adjacent nodes."
+  },
+  {
+    "id": "data-structures-006",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Max children in a binary tree node?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "Unlimited"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary tree nodes have at most two children."
+  },
+  {
+    "id": "data-structures-007",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "BFS commonly uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap only",
+      "Hash function"
+    ],
+    "correctIndex": 0,
+    "explanation": "BFS explores layers with a queue."
+  },
+  {
+    "id": "data-structures-008",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "Iterative DFS commonly uses?",
+    "options": [
+      "Stack",
+      "Queue only",
+      "Sorted array",
+      "Bloom filter"
+    ],
+    "correctIndex": 0,
+    "explanation": "DFS uses a stack."
+  },
+  {
+    "id": "data-structures-009",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Worst-case search in skewed BST?",
+    "options": [
+      "O(n)",
+      "O(log n) guaranteed",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "A skewed BST can behave like a linked list."
+  },
+  {
+    "id": "data-structures-010",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "Stable sorting algorithm among these?",
+    "options": [
+      "Merge sort",
+      "Heap sort",
+      "Selection sort",
+      "Quicksort always"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge sort can preserve order of equal keys."
+  },
+  {
+    "id": "data-structures-011",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "Hash table maps keys using?",
+    "options": [
+      "Hash function to slots",
+      "Tree roots only",
+      "Queue fronts",
+      "Array length"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hash functions map keys to candidate slots."
+  },
+  {
+    "id": "data-structures-012",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Priority-based removal structure?",
+    "options": [
+      "Priority queue",
+      "Stack only",
+      "Circular list only",
+      "String"
+    ],
+    "correctIndex": 0,
+    "explanation": "Priority queues remove by priority."
+  },
+  {
+    "id": "data-structures-013",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "Array indexed access complexity?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Array access computes an offset directly."
+  },
+  {
+    "id": "data-structures-014",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "Height-balanced tree?",
+    "options": [
+      "AVL tree",
+      "Skewed tree",
+      "Linked list",
+      "Unordered graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "AVL trees rebalance through rotations."
+  },
+  {
+    "id": "data-structures-015",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Shortest path with nonnegative weights?",
+    "options": [
+      "Dijkstra's algorithm",
+      "DFS always",
+      "Bubble sort",
+      "Kruskal only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dijkstra handles nonnegative edge weights."
+  },
+  {
+    "id": "data-structures-016",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "BST traversal yielding sorted keys?",
+    "options": [
+      "Inorder",
+      "Preorder",
+      "Postorder",
+      "Random"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inorder visits BST keys in sorted order."
+  },
+  {
+    "id": "data-structures-017",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "Graph edge is?",
+    "options": [
+      "Connection between vertices",
+      "Tree root",
+      "Queue slot",
+      "Sorting pass"
+    ],
+    "correctIndex": 0,
+    "explanation": "Edges represent relationships between vertices."
+  },
+  {
+    "id": "data-structures-018",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Links in both directions?",
+    "options": [
+      "Doubly linked list",
+      "Singly linked list",
+      "Array only",
+      "Stack"
+    ],
+    "correctIndex": 0,
+    "explanation": "Doubly linked nodes link to previous and next."
+  },
+  {
+    "id": "data-structures-019",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "Circular queue property?",
+    "options": [
+      "Last position wraps to first",
+      "No capacity",
+      "Always sorted",
+      "Recursion only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Circular indexing reuses positions."
+  },
+  {
+    "id": "data-structures-020",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "Collision resolution using bucket lists?",
+    "options": [
+      "Separate chaining",
+      "Binary search",
+      "Rotation",
+      "Backtracking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Separate chaining stores colliding entries in a bucket collection."
+  },
+  {
+    "id": "data-structures-021",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Merge sort strategy?",
+    "options": [
+      "Divide and conquer",
+      "Greedy only",
+      "Dynamic programming only",
+      "Brute force only"
+    ],
+    "correctIndex": 0,
+    "explanation": "It divides, sorts, and merges subproblems."
+  },
+  {
+    "id": "data-structures-022",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "Heap often represented by?",
+    "options": [
+      "Array",
+      "File descriptor",
+      "SQL view",
+      "Socket"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete binary heaps map efficiently to arrays."
+  },
+  {
+    "id": "data-structures-023",
+    "subject": "Data Structures",
+    "difficulty": "medium",
+    "question": "Undo history commonly uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Trie only",
+      "Graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "Undo is last-in-first-out."
+  },
+  {
+    "id": "data-structures-024",
+    "subject": "Data Structures",
+    "difficulty": "hard",
+    "question": "Trie is optimized for?",
+    "options": [
+      "Prefix string lookup",
+      "Matrix multiplication",
+      "CPU scheduling",
+      "Disk formatting"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tries share prefixes."
+  },
+  {
+    "id": "data-structures-025",
+    "subject": "Data Structures",
+    "difficulty": "easy",
+    "question": "Insert onto a stack?",
+    "options": [
+      "Push",
+      "Dequeue",
+      "Extract-min",
+      "Traverse"
+    ],
+    "correctIndex": 0,
+    "explanation": "Push adds an item to a stack."
+  },
+  {
+    "id": "dbms---sql-001",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "DBMS stands for?",
+    "options": [
+      "Database Management System",
+      "Data Backup Memory Service",
+      "Digital Base Model Syntax",
+      "Database Machine Setup"
+    ],
+    "correctIndex": 0,
+    "explanation": "A DBMS manages stored data."
+  },
+  {
+    "id": "dbms---sql-002",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "Retrieve rows with?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "UPDATE",
+      "DROP"
+    ],
+    "correctIndex": 0,
+    "explanation": "SELECT queries data."
+  },
+  {
+    "id": "dbms---sql-003",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "Uniquely identifies a row?",
+    "options": [
+      "Primary key",
+      "Foreign key only",
+      "Duplicate key",
+      "Nullable key"
+    ],
+    "correctIndex": 0,
+    "explanation": "Primary keys uniquely identify rows."
+  },
+  {
+    "id": "dbms---sql-004",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "Filter rows before grouping?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "LIMIT"
+    ],
+    "correctIndex": 0,
+    "explanation": "WHERE filters rows before aggregation."
+  },
+  {
+    "id": "dbms---sql-005",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "Filter aggregate groups?",
+    "options": [
+      "HAVING",
+      "WHERE",
+      "FROM",
+      "JOIN"
+    ],
+    "correctIndex": 0,
+    "explanation": "HAVING filters groups."
+  },
+  {
+    "id": "dbms---sql-006",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "Add new rows?",
+    "options": [
+      "INSERT",
+      "ALTER",
+      "DELETE",
+      "GRANT"
+    ],
+    "correctIndex": 0,
+    "explanation": "INSERT adds rows."
+  },
+  {
+    "id": "dbms---sql-007",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "Modify existing rows?",
+    "options": [
+      "UPDATE",
+      "CREATE",
+      "SELECT",
+      "COMMIT"
+    ],
+    "correctIndex": 0,
+    "explanation": "UPDATE changes rows matching a condition."
+  },
+  {
+    "id": "dbms---sql-008",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "Remove selected rows?",
+    "options": [
+      "DELETE",
+      "ALTER",
+      "DESCRIBE",
+      "GRANT"
+    ],
+    "correctIndex": 0,
+    "explanation": "DELETE removes rows."
+  },
+  {
+    "id": "dbms---sql-009",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "Foreign key enforces?",
+    "options": [
+      "Referential integrity",
+      "Sorting",
+      "Encryption",
+      "Compression only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Foreign keys constrain references."
+  },
+  {
+    "id": "dbms---sql-010",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "2NF eliminates?",
+    "options": [
+      "Partial dependency on a composite key",
+      "All primary keys",
+      "All indexes",
+      "Every join"
+    ],
+    "correctIndex": 0,
+    "explanation": "Second normal form removes partial dependencies."
+  },
+  {
+    "id": "dbms---sql-011",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "JOIN does what?",
+    "options": [
+      "Combines related rows from tables",
+      "Deletes tables",
+      "Encrypts columns",
+      "Backs up data"
+    ],
+    "correctIndex": 0,
+    "explanation": "JOIN combines rows using a condition."
+  },
+  {
+    "id": "dbms---sql-012",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "Preserve all left rows?",
+    "options": [
+      "LEFT JOIN",
+      "INNER JOIN",
+      "CROSS JOIN",
+      "RIGHT JOIN"
+    ],
+    "correctIndex": 0,
+    "explanation": "LEFT JOIN keeps all left-side rows."
+  },
+  {
+    "id": "dbms---sql-013",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "ACID describes?",
+    "options": [
+      "Transaction properties",
+      "HTML properties",
+      "FIFO properties",
+      "OSI properties"
+    ],
+    "correctIndex": 0,
+    "explanation": "ACID means atomicity, consistency, isolation, durability."
+  },
+  {
+    "id": "dbms---sql-014",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "Make transaction changes permanent?",
+    "options": [
+      "COMMIT",
+      "ROLLBACK",
+      "SAVEPOINT",
+      "REVOKE"
+    ],
+    "correctIndex": 0,
+    "explanation": "COMMIT persists transaction changes."
+  },
+  {
+    "id": "dbms---sql-015",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "Undo uncommitted changes?",
+    "options": [
+      "ROLLBACK",
+      "COMMIT",
+      "GRANT",
+      "CREATE"
+    ],
+    "correctIndex": 0,
+    "explanation": "ROLLBACK reverses current transaction changes."
+  },
+  {
+    "id": "dbms---sql-016",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "Aggregate that counts?",
+    "options": [
+      "COUNT()",
+      "SUM()",
+      "AVG()",
+      "ROUND()"
+    ],
+    "correctIndex": 0,
+    "explanation": "COUNT counts rows or non-null values."
+  },
+  {
+    "id": "dbms---sql-017",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "Disallow NULL values?",
+    "options": [
+      "NOT NULL",
+      "UNIQUE only",
+      "DEFAULT",
+      "CHECK only"
+    ],
+    "correctIndex": 0,
+    "explanation": "NOT NULL requires a value."
+  },
+  {
+    "id": "dbms---sql-018",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "Define a table?",
+    "options": [
+      "CREATE TABLE",
+      "MAKE TABLE",
+      "INSERT TABLE",
+      "BUILD ROW"
+    ],
+    "correctIndex": 0,
+    "explanation": "CREATE TABLE defines a schema."
+  },
+  {
+    "id": "dbms---sql-019",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "Index is mainly used to?",
+    "options": [
+      "Speed up retrieval",
+      "Prevent all updates",
+      "Replace constraints",
+      "Encrypt database"
+    ],
+    "correctIndex": 0,
+    "explanation": "Indexes can speed searches."
+  },
+  {
+    "id": "dbms---sql-020",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "Test membership in a set?",
+    "options": [
+      "IN",
+      "LIKE",
+      "IS NULL",
+      "BETWEEN only"
+    ],
+    "correctIndex": 0,
+    "explanation": "IN tests against listed values or a subquery."
+  },
+  {
+    "id": "dbms---sql-021",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "LIKE wildcard for any sequence?",
+    "options": [
+      "%",
+      "_",
+      "*",
+      "?"
+    ],
+    "correctIndex": 0,
+    "explanation": "% matches zero or more characters."
+  },
+  {
+    "id": "dbms---sql-022",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "A view is?",
+    "options": [
+      "Named query presented like a virtual table",
+      "CPU cache",
+      "Backup tape",
+      "Key type"
+    ],
+    "correctIndex": 0,
+    "explanation": "A view is defined by a query."
+  },
+  {
+    "id": "dbms---sql-023",
+    "subject": "DBMS & SQL",
+    "difficulty": "medium",
+    "question": "Change table structure?",
+    "options": [
+      "ALTER TABLE",
+      "UPDATE TABLE",
+      "CHANGE ROW",
+      "MODIFY ROW"
+    ],
+    "correctIndex": 0,
+    "explanation": "ALTER TABLE changes a table definition."
+  },
+  {
+    "id": "dbms---sql-024",
+    "subject": "DBMS & SQL",
+    "difficulty": "hard",
+    "question": "Normalization reduces?",
+    "options": [
+      "Redundancy and update anomalies",
+      "Data integrity",
+      "Query capability",
+      "All keys"
+    ],
+    "correctIndex": 0,
+    "explanation": "Normalization reduces undesirable redundancy."
+  },
+  {
+    "id": "dbms---sql-025",
+    "subject": "DBMS & SQL",
+    "difficulty": "easy",
+    "question": "Sort query output?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE",
+      "HAVING"
+    ],
+    "correctIndex": 0,
+    "explanation": "ORDER BY specifies output order."
+  },
+  {
+    "id": "operating-systems-001",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Main role of an OS?",
+    "options": [
+      "Manage hardware and provide program services",
+      "Compile every language",
+      "Design pages",
+      "Replace RAM"
+    ],
+    "correctIndex": 0,
+    "explanation": "An OS manages resources and provides abstractions."
+  },
+  {
+    "id": "operating-systems-002",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Scheduling with time slices?",
+    "options": [
+      "Round Robin",
+      "FCFS only",
+      "SJF only",
+      "Non-preemptive priority"
+    ],
+    "correctIndex": 0,
+    "explanation": "Round Robin assigns time quanta."
+  },
+  {
+    "id": "operating-systems-003",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "A process is?",
+    "options": [
+      "Program in execution",
+      "Source file only",
+      "CPU register",
+      "Folder"
+    ],
+    "correctIndex": 0,
+    "explanation": "A process includes execution state and resources."
+  },
+  {
+    "id": "operating-systems-004",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Necessary deadlock condition?",
+    "options": [
+      "Circular wait",
+      "Infinite RAM",
+      "Single user only",
+      "No contention"
+    ],
+    "correctIndex": 0,
+    "explanation": "Circular wait is one Coffman condition."
+  },
+  {
+    "id": "operating-systems-005",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Virtual memory provides?",
+    "options": [
+      "Address-space abstraction beyond physical RAM",
+      "CPU fan",
+      "Keyboard backup",
+      "Only ROM"
+    ],
+    "correctIndex": 0,
+    "explanation": "Virtual memory maps virtual addresses to physical storage."
+  },
+  {
+    "id": "operating-systems-006",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Not a typical process state?",
+    "options": [
+      "Compiled",
+      "Ready",
+      "Running",
+      "Blocked"
+    ],
+    "correctIndex": 0,
+    "explanation": "Compiled is not a runtime process state."
+  },
+  {
+    "id": "operating-systems-007",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Context switch means?",
+    "options": [
+      "Switch CPU execution between tasks",
+      "Format disk",
+      "Delete process",
+      "Add RAM"
+    ],
+    "correctIndex": 0,
+    "explanation": "The OS saves and restores execution context."
+  },
+  {
+    "id": "operating-systems-008",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Fastest storage listed?",
+    "options": [
+      "CPU registers",
+      "SSD",
+      "Hard disk",
+      "Optical disc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Registers are extremely fast CPU storage."
+  },
+  {
+    "id": "operating-systems-009",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Paging divides memory into?",
+    "options": [
+      "Fixed-size pages",
+      "Alphabetical processes",
+      "Encrypted files",
+      "Priority levels"
+    ],
+    "correctIndex": 0,
+    "explanation": "Paging maps virtual pages to physical frames."
+  },
+  {
+    "id": "operating-systems-010",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Synchronization primitive?",
+    "options": [
+      "Semaphore",
+      "Compiler warning",
+      "DNS record",
+      "HTML tag"
+    ],
+    "correctIndex": 0,
+    "explanation": "Semaphores coordinate shared-resource access."
+  },
+  {
+    "id": "operating-systems-011",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Thrashing means?",
+    "options": [
+      "Excessive paging activity",
+      "High-quality printing",
+      "Low latency",
+      "Correct compilation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Paging can dominate useful execution."
+  },
+  {
+    "id": "operating-systems-012",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Selects next ready process?",
+    "options": [
+      "CPU scheduler",
+      "Compiler",
+      "DNS resolver",
+      "File allocator only"
+    ],
+    "correctIndex": 0,
+    "explanation": "The short-term scheduler selects a process for CPU."
+  },
+  {
+    "id": "operating-systems-013",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "System call is?",
+    "options": [
+      "Request for OS service",
+      "Recursive function only",
+      "Database join",
+      "Power cable"
+    ],
+    "correctIndex": 0,
+    "explanation": "System calls provide access to kernel services."
+  },
+  {
+    "id": "operating-systems-014",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "First adequate memory block strategy?",
+    "options": [
+      "First fit",
+      "Best fit always",
+      "Worst fit",
+      "Round robin"
+    ],
+    "correctIndex": 0,
+    "explanation": "First fit selects the first sufficiently large hole."
+  },
+  {
+    "id": "operating-systems-015",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "File system manages?",
+    "options": [
+      "Files, directories, storage metadata",
+      "CPU arithmetic",
+      "Routing only",
+      "App themes"
+    ],
+    "correctIndex": 0,
+    "explanation": "File systems organize persistent data."
+  },
+  {
+    "id": "operating-systems-016",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Preemptive scheduling example?",
+    "options": [
+      "Round Robin",
+      "FCFS",
+      "Non-preemptive SJF",
+      "Non-preemptive priority"
+    ],
+    "correctIndex": 0,
+    "explanation": "Round Robin can preempt after a quantum."
+  },
+  {
+    "id": "operating-systems-017",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Thread is?",
+    "options": [
+      "Unit of execution within a process",
+      "Disk partition",
+      "File extension",
+      "Packet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Threads share process resources but have execution state."
+  },
+  {
+    "id": "operating-systems-018",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Deadlock avoidance algorithm?",
+    "options": [
+      "Banker's algorithm",
+      "Bubble sort",
+      "CRC",
+      "KMP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Banker's algorithm checks safe states."
+  },
+  {
+    "id": "operating-systems-019",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Fragmentation is?",
+    "options": [
+      "Wasted memory from allocation patterns",
+      "CPU instruction",
+      "Network protocol",
+      "Database constraint"
+    ],
+    "correctIndex": 0,
+    "explanation": "Internal/external fragmentation reduces utilization."
+  },
+  {
+    "id": "operating-systems-020",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Non-volatile memory?",
+    "options": [
+      "ROM",
+      "CPU register",
+      "DRAM",
+      "Cache SRAM"
+    ],
+    "correctIndex": 0,
+    "explanation": "ROM retains contents without power."
+  },
+  {
+    "id": "operating-systems-021",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Race condition means?",
+    "options": [
+      "Outcome depends on concurrent timing",
+      "Fast benchmark",
+      "Scheduling policy",
+      "Page fault"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unsynchronized access can yield timing-dependent outcomes."
+  },
+  {
+    "id": "operating-systems-022",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Page replacement algorithm?",
+    "options": [
+      "LRU",
+      "Dijkstra",
+      "KMP",
+      "FCFS CPU scheduling"
+    ],
+    "correctIndex": 0,
+    "explanation": "LRU evicts the least recently used page."
+  },
+  {
+    "id": "operating-systems-023",
+    "subject": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Kernel is?",
+    "options": [
+      "Core part of an operating system",
+      "Browser extension",
+      "Database row",
+      "Comment"
+    ],
+    "correctIndex": 0,
+    "explanation": "The kernel manages core resources."
+  },
+  {
+    "id": "operating-systems-024",
+    "subject": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Waiting for I/O process state?",
+    "options": [
+      "Blocked",
+      "Running",
+      "Ready",
+      "Terminated"
+    ],
+    "correctIndex": 0,
+    "explanation": "A blocked process waits for an event."
+  },
+  {
+    "id": "operating-systems-025",
+    "subject": "Operating Systems",
+    "difficulty": "easy",
+    "question": "DMA enables?",
+    "options": [
+      "Device transfers with limited CPU involvement",
+      "Skip permissions",
+      "RAM becomes ROM",
+      "Compile source"
+    ],
+    "correctIndex": 0,
+    "explanation": "DMA transfers blocks without CPU copying every byte."
+  },
+  {
+    "id": "computer-networks-001",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "IP primarily provides?",
+    "options": [
+      "Logical addressing and packet routing",
+      "Reliable app messages alone",
+      "Web styling",
+      "Compression"
+    ],
+    "correctIndex": 0,
+    "explanation": "IP routes packets best-effort."
+  },
+  {
+    "id": "computer-networks-002",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "OSI routing layer?",
+    "options": [
+      "Network",
+      "Physical",
+      "Presentation",
+      "Application"
+    ],
+    "correctIndex": 0,
+    "explanation": "Layer 3 handles routing."
+  },
+  {
+    "id": "computer-networks-003",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "Reliable ordered byte stream?",
+    "options": [
+      "TCP",
+      "UDP",
+      "IP",
+      "ARP"
+    ],
+    "correctIndex": 0,
+    "explanation": "TCP provides reliable ordered transport."
+  },
+  {
+    "id": "computer-networks-004",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "Resolve domain names?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "FTP",
+      "SMTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "DNS resolves names to records."
+  },
+  {
+    "id": "computer-networks-005",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "Automatically lease IP configuration?",
+    "options": [
+      "DHCP",
+      "HTTP",
+      "SSH",
+      "IMAP"
+    ],
+    "correctIndex": 0,
+    "explanation": "DHCP provides IP configuration."
+  },
+  {
+    "id": "computer-networks-006",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "Forward frames using MAC addresses?",
+    "options": [
+      "Switch",
+      "Router only",
+      "Repeater only",
+      "Modem only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Switches forward Ethernet frames by MAC address."
+  },
+  {
+    "id": "computer-networks-007",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "Forward packets between IP networks?",
+    "options": [
+      "Router",
+      "Hub",
+      "Keyboard",
+      "Bridge only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Routers use routing tables."
+  },
+  {
+    "id": "computer-networks-008",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "Default HTTPS port?",
+    "options": [
+      "443",
+      "80",
+      "21",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTTPS commonly uses port 443."
+  },
+  {
+    "id": "computer-networks-009",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "Default HTTP port?",
+    "options": [
+      "80",
+      "443",
+      "53",
+      "110"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTTP commonly uses port 80."
+  },
+  {
+    "id": "computer-networks-010",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "Send and relay email?",
+    "options": [
+      "SMTP",
+      "POP3 only",
+      "DNS",
+      "SNMP"
+    ],
+    "correctIndex": 0,
+    "explanation": "SMTP submits and relays email."
+  },
+  {
+    "id": "computer-networks-011",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "Connectionless transport protocol?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "SSH"
+    ],
+    "correctIndex": 0,
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "computer-networks-012",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "Subnet mask identifies?",
+    "options": [
+      "Network and host portions",
+      "Website theme",
+      "Password hash",
+      "Cable speed"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mask defines the network prefix."
+  },
+  {
+    "id": "computer-networks-013",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "IPv4 address length?",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "16 bits"
+    ],
+    "correctIndex": 0,
+    "explanation": "IPv4 uses 32-bit addresses."
+  },
+  {
+    "id": "computer-networks-014",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "IPv6 address length?",
+    "options": [
+      "128 bits",
+      "32 bits",
+      "64 bits",
+      "256 bits"
+    ],
+    "correctIndex": 0,
+    "explanation": "IPv6 uses 128-bit addresses."
+  },
+  {
+    "id": "computer-networks-015",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "Map IPv4 address to LAN MAC?",
+    "options": [
+      "ARP",
+      "DNS",
+      "SMTP",
+      "NTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "ARP discovers local IPv4-to-MAC mappings."
+  },
+  {
+    "id": "computer-networks-016",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "Latency measures?",
+    "options": [
+      "Delay",
+      "File size",
+      "Signal color",
+      "User count"
+    ],
+    "correctIndex": 0,
+    "explanation": "Latency is travel or response time."
+  },
+  {
+    "id": "computer-networks-017",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "Bandwidth commonly measured in?",
+    "options": [
+      "Bits per second",
+      "Meters per second",
+      "Files per folder",
+      "Volts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Network data rate is measured in bits per second."
+  },
+  {
+    "id": "computer-networks-018",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "End-to-end transport layer?",
+    "options": [
+      "Transport",
+      "Data link",
+      "Physical",
+      "Session only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Transport supports process-to-process delivery."
+  },
+  {
+    "id": "computer-networks-019",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "Filter traffic by rules?",
+    "options": [
+      "Firewall",
+      "Translator",
+      "DNS only",
+      "Browser history"
+    ],
+    "correctIndex": 0,
+    "explanation": "Firewalls enforce traffic policy."
+  },
+  {
+    "id": "computer-networks-020",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "Secure remote shell?",
+    "options": [
+      "SSH",
+      "Telnet",
+      "FTP",
+      "TFTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "SSH provides encrypted remote access."
+  },
+  {
+    "id": "computer-networks-021",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "NAT translates?",
+    "options": [
+      "Address/port mappings",
+      "HTML into CSS",
+      "TCP into electricity",
+      "Names into passwords"
+    ],
+    "correctIndex": 0,
+    "explanation": "NAT rewrites address information."
+  },
+  {
+    "id": "computer-networks-022",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "Central switch topology?",
+    "options": [
+      "Star",
+      "Bus",
+      "Ring",
+      "Mesh only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Star nodes connect to a central device."
+  },
+  {
+    "id": "computer-networks-023",
+    "subject": "Computer Networks",
+    "difficulty": "medium",
+    "question": "Synchronize network clocks?",
+    "options": [
+      "NTP",
+      "FTP",
+      "POP3",
+      "ICMP only"
+    ],
+    "correctIndex": 0,
+    "explanation": "NTP synchronizes clocks."
+  },
+  {
+    "id": "computer-networks-024",
+    "subject": "Computer Networks",
+    "difficulty": "hard",
+    "question": "Packet loss means?",
+    "options": [
+      "Packets fail to arrive",
+      "Packet gets larger",
+      "Router gains memory",
+      "DNS returns a name"
+    ],
+    "correctIndex": 0,
+    "explanation": "Packets may be dropped or fail to reach destination."
+  },
+  {
+    "id": "computer-networks-025",
+    "subject": "Computer Networks",
+    "difficulty": "easy",
+    "question": "Network diagnostics/errors protocol?",
+    "options": [
+      "ICMP",
+      "SMTP",
+      "HTML",
+      "SFTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "ICMP carries control and diagnostic messages."
+  },
+  {
+    "id": "web-technologies-001",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "HTML defines?",
+    "options": [
+      "Structure and meaning of web content",
+      "Transactions",
+      "Routing",
+      "Scheduling"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTML structures documents."
+  },
+  {
+    "id": "web-technologies-002",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "CSS controls?",
+    "options": [
+      "Presentation and layout",
+      "CPU scheduling",
+      "SQL constraints",
+      "IP routing"
+    ],
+    "correctIndex": 0,
+    "explanation": "CSS styles documents."
+  },
+  {
+    "id": "web-technologies-003",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "Hyperlink tag?",
+    "options": [
+      "<a>",
+      "<linkto>",
+      "<href>",
+      "<url>"
+    ],
+    "correctIndex": 0,
+    "explanation": "Anchor elements use href."
+  },
+  {
+    "id": "web-technologies-004",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "Image alternative text attribute?",
+    "options": [
+      "alt",
+      "src",
+      "role only",
+      "class"
+    ],
+    "correctIndex": 0,
+    "explanation": "alt communicates image meaning."
+  },
+  {
+    "id": "web-technologies-005",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "Reassignable block-scoped JS variable?",
+    "options": [
+      "let",
+      "const",
+      "var only",
+      "static"
+    ],
+    "correctIndex": 0,
+    "explanation": "let is block-scoped and reassignable."
+  },
+  {
+    "id": "web-technologies-006",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "First matching CSS selector method?",
+    "options": [
+      "querySelector()",
+      "getAll()",
+      "selectFirstTag()",
+      "findCSS()"
+    ],
+    "correctIndex": 0,
+    "explanation": "querySelector returns the first match."
+  },
+  {
+    "id": "web-technologies-007",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "Flexbox primarily supports?",
+    "options": [
+      "One-dimensional layout",
+      "Database joins",
+      "Audio encoding",
+      "Cryptography"
+    ],
+    "correctIndex": 0,
+    "explanation": "Flexbox distributes items along one axis."
+  },
+  {
+    "id": "web-technologies-008",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "CSS text color property?",
+    "options": [
+      "color",
+      "font-style",
+      "background-image",
+      "text-align"
+    ],
+    "correctIndex": 0,
+    "explanation": "color sets foreground text color."
+  },
+  {
+    "id": "web-technologies-009",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "Semantic primary navigation element?",
+    "options": [
+      "<nav>",
+      "<span>",
+      "<b>",
+      "<meta>"
+    ],
+    "correctIndex": 0,
+    "explanation": "nav represents navigation links."
+  },
+  {
+    "id": "web-technologies-010",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "DOM stands for?",
+    "options": [
+      "Document Object Model",
+      "Data Output Method",
+      "Digital Order Map",
+      "Document Option Mode"
+    ],
+    "correctIndex": 0,
+    "explanation": "DOM represents a document as objects."
+  },
+  {
+    "id": "web-technologies-011",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "Common button activation event?",
+    "options": [
+      "click",
+      "hovered",
+      "submittext",
+      "presskeyonly"
+    ],
+    "correctIndex": 0,
+    "explanation": "click handles pointer and keyboard activation."
+  },
+  {
+    "id": "web-technologies-012",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "Strict equality in JavaScript?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!==="
+    ],
+    "correctIndex": 0,
+    "explanation": "=== compares without type coercion."
+  },
+  {
+    "id": "web-technologies-013",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "Constant binding keyword?",
+    "options": [
+      "const",
+      "let",
+      "fixed",
+      "immutable"
+    ],
+    "correctIndex": 0,
+    "explanation": "const prevents reassignment of the binding."
+  },
+  {
+    "id": "web-technologies-014",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "Responsive design means?",
+    "options": [
+      "Adapt layout to screen sizes",
+      "Respond only to email",
+      "Database replication",
+      "Image format"
+    ],
+    "correctIndex": 0,
+    "explanation": "Responsive layouts adapt to viewport constraints."
+  },
+  {
+    "id": "web-technologies-015",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "CSS responsive breakpoint at-rule?",
+    "options": [
+      "@media",
+      "@screen-size",
+      "@responsive",
+      "@viewport-only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Media queries apply styles under matching conditions."
+  },
+  {
+    "id": "web-technologies-016",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "JSON is?",
+    "options": [
+      "Text data-interchange format",
+      "Styling language",
+      "Browser engine",
+      "Database server"
+    ],
+    "correctIndex": 0,
+    "explanation": "JSON represents structured data as text."
+  },
+  {
+    "id": "web-technologies-017",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "Unique element identifier attribute?",
+    "options": [
+      "id",
+      "class",
+      "style",
+      "name always"
+    ],
+    "correctIndex": 0,
+    "explanation": "An id should be unique in a document."
+  },
+  {
+    "id": "web-technologies-018",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "Space inside border?",
+    "options": [
+      "padding",
+      "margin",
+      "outline",
+      "gap only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Padding separates content from the border."
+  },
+  {
+    "id": "web-technologies-019",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "Space outside border?",
+    "options": [
+      "margin",
+      "padding",
+      "line-height",
+      "border-spacing only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Margin separates elements."
+  },
+  {
+    "id": "web-technologies-020",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "preventDefault() does what?",
+    "options": [
+      "Cancels default browser action",
+      "Stops all events globally",
+      "Deletes target",
+      "Reloads page"
+    ],
+    "correctIndex": 0,
+    "explanation": "It prevents an event's default action."
+  },
+  {
+    "id": "web-technologies-021",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "Browser persistent string storage?",
+    "options": [
+      "localStorage",
+      "sessionStack",
+      "cookieMemory",
+      "DOMCache"
+    ],
+    "correctIndex": 0,
+    "explanation": "localStorage persists string values across sessions."
+  },
+  {
+    "id": "web-technologies-022",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "Self-contained content element?",
+    "options": [
+      "<article>",
+      "<i>",
+      "<small>",
+      "<br>"
+    ],
+    "correctIndex": 0,
+    "explanation": "article represents self-contained content."
+  },
+  {
+    "id": "web-technologies-023",
+    "subject": "Web Technologies",
+    "difficulty": "medium",
+    "question": "Event bubbling means?",
+    "options": [
+      "Event propagates from target to ancestors",
+      "Images lazy-load",
+      "CSS expands",
+      "Promise resolves twice"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bubbling propagates events upward through the DOM."
+  },
+  {
+    "id": "web-technologies-024",
+    "subject": "Web Technologies",
+    "difficulty": "hard",
+    "question": "HTTP retrieval method?",
+    "options": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "correctIndex": 0,
+    "explanation": "GET requests a resource representation."
+  },
+  {
+    "id": "web-technologies-025",
+    "subject": "Web Technologies",
+    "difficulty": "easy",
+    "question": "External stylesheet element?",
+    "options": [
+      "<link rel=\"stylesheet\">",
+      "<css>",
+      "<style src>",
+      "<script type=\"css\">"
+    ],
+    "correctIndex": 0,
+    "explanation": "link references an external stylesheet."
+  },
+  {
+    "id": "software-engineering-001",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Software engineering aims at?",
+    "options": [
+      "Systematic reliable software development",
+      "Only fast coding",
+      "Guess-based testing",
+      "Chip design only"
+    ],
+    "correctIndex": 0,
+    "explanation": "It applies disciplined engineering methods."
+  },
+  {
+    "id": "software-engineering-002",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "Sequential SDLC model?",
+    "options": [
+      "Waterfall",
+      "Scrum",
+      "Kanban only",
+      "Spiral only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Waterfall arranges phases sequentially."
+  },
+  {
+    "id": "software-engineering-003",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "Requirement is?",
+    "options": [
+      "Capability or constraint system must satisfy",
+      "Random comment",
+      "Compiler output",
+      "Test failure"
+    ],
+    "correctIndex": 0,
+    "explanation": "Requirements describe expected behavior or constraints."
+  },
+  {
+    "id": "software-engineering-004",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Test individual modules?",
+    "options": [
+      "Unit testing",
+      "System testing only",
+      "Acceptance only",
+      "Beta only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unit tests target small components."
+  },
+  {
+    "id": "software-engineering-005",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "Regression testing checks?",
+    "options": [
+      "Changes did not break existing behavior",
+      "Network cables only",
+      "Requirements writing",
+      "Old tests removed"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regression tests detect unintended side effects."
+  },
+  {
+    "id": "software-engineering-006",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "Actors and system use cases diagram?",
+    "options": [
+      "Use-case diagram",
+      "Class diagram only",
+      "Deployment log",
+      "CPU flowchart"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use-case diagrams model actor goals."
+  },
+  {
+    "id": "software-engineering-007",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Early model for exploring requirements?",
+    "options": [
+      "Prototype",
+      "Final database always",
+      "Compiler",
+      "Certificate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prototypes help validate ideas."
+  },
+  {
+    "id": "software-engineering-008",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "Short iterative delivery approach?",
+    "options": [
+      "Agile",
+      "Big-bang only",
+      "Waterfall exclusively",
+      "One-pass coding"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agile emphasizes iterations and feedback."
+  },
+  {
+    "id": "software-engineering-009",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "Manage file changes over time?",
+    "options": [
+      "Version control",
+      "CPU temperature",
+      "Bandwidth only",
+      "Plaintext passwords"
+    ],
+    "correctIndex": 0,
+    "explanation": "Version control records project history."
+  },
+  {
+    "id": "software-engineering-010",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Independent control-flow paths metric?",
+    "options": [
+      "Cyclomatic complexity",
+      "Page speed",
+      "Network jitter",
+      "Disk capacity"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cyclomatic complexity measures independent paths."
+  },
+  {
+    "id": "software-engineering-011",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "Black-box testing focuses on?",
+    "options": [
+      "External behavior and requirements",
+      "Internal code only",
+      "Compiler optimization",
+      "CPU architecture"
+    ],
+    "correctIndex": 0,
+    "explanation": "Black-box tests use observable behavior."
+  },
+  {
+    "id": "software-engineering-012",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "White-box testing focuses on?",
+    "options": [
+      "Internal code structure",
+      "Surveys only",
+      "Network topology",
+      "Colors"
+    ],
+    "correctIndex": 0,
+    "explanation": "White-box testing uses knowledge of code paths."
+  },
+  {
+    "id": "software-engineering-013",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Translate requirements into system design?",
+    "options": [
+      "Design phase",
+      "Retirement",
+      "Monitoring only",
+      "Maintenance only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Design defines architecture and solution details."
+  },
+  {
+    "id": "software-engineering-014",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "Improve internal structure without behavior change?",
+    "options": [
+      "Refactoring",
+      "Adding unrelated features",
+      "Delete tests",
+      "Change goals"
+    ],
+    "correctIndex": 0,
+    "explanation": "Refactoring preserves behavior while improving design."
+  },
+  {
+    "id": "software-engineering-015",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "Architecture/design often documented in?",
+    "options": [
+      "Software design specification",
+      "Invoice only",
+      "Packet capture",
+      "Compiler binary"
+    ],
+    "correctIndex": 0,
+    "explanation": "Design documentation records design decisions."
+  },
+  {
+    "id": "software-engineering-016",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Risk management means?",
+    "options": [
+      "Identify, assess, respond to uncertainty",
+      "Avoid planning",
+      "Assign grades only",
+      "Code without review"
+    ],
+    "correctIndex": 0,
+    "explanation": "Risk management reduces threat likelihood or impact."
+  },
+  {
+    "id": "software-engineering-017",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "CI stands for?",
+    "options": [
+      "Continuous Integration",
+      "Code Isolation",
+      "Central Internet",
+      "Compiled Interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "CI integrates and tests changes frequently."
+  },
+  {
+    "id": "software-engineering-018",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "Longest dependency path determining project duration?",
+    "options": [
+      "Critical path",
+      "Shortest file",
+      "Testing shortcut",
+      "Database index"
+    ],
+    "correctIndex": 0,
+    "explanation": "Critical-path delays can delay the project."
+  },
+  {
+    "id": "software-engineering-019",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Fix defects after delivery?",
+    "options": [
+      "Corrective maintenance",
+      "Perfective only",
+      "Adaptive only",
+      "Preventive only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Corrective maintenance repairs faults."
+  },
+  {
+    "id": "software-engineering-020",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "Test case contains?",
+    "options": [
+      "Inputs, conditions, expected results",
+      "Manual cover",
+      "Schema only",
+      "Budget"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test cases define verification steps."
+  },
+  {
+    "id": "software-engineering-021",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "Usability focuses on?",
+    "options": [
+      "Effectiveness, efficiency, satisfaction",
+      "Code length only",
+      "Clock speed",
+      "Addressing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Usability evaluates the user experience."
+  },
+  {
+    "id": "software-engineering-022",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Peer code review is?",
+    "options": [
+      "Colleague examines code quality",
+      "Compiler writes features",
+      "Customer invoice",
+      "Server backup"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reviews help identify defects."
+  },
+  {
+    "id": "software-engineering-023",
+    "subject": "Software Engineering",
+    "difficulty": "medium",
+    "question": "Risk-driven iterative model?",
+    "options": [
+      "Spiral",
+      "Waterfall only",
+      "V-model only",
+      "Big-bang"
+    ],
+    "correctIndex": 0,
+    "explanation": "Spiral cycles include risk analysis."
+  },
+  {
+    "id": "software-engineering-024",
+    "subject": "Software Engineering",
+    "difficulty": "hard",
+    "question": "Software maintenance is?",
+    "options": [
+      "Modify software after delivery",
+      "Initial coding only",
+      "Interviews only",
+      "Delete docs"
+    ],
+    "correctIndex": 0,
+    "explanation": "Maintenance corrects and adapts delivered software."
+  },
+  {
+    "id": "software-engineering-025",
+    "subject": "Software Engineering",
+    "difficulty": "easy",
+    "question": "Project baseline is?",
+    "options": [
+      "Approved reference for tracking changes",
+      "Temporary variable",
+      "Unit test",
+      "Color palette"
+    ],
+    "correctIndex": 0,
+    "explanation": "Baselines support project control."
+  },
+  {
+    "id": "computer-organization---architecture-001",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Arithmetic/logic unit?",
+    "options": [
+      "ALU",
+      "Control unit",
+      "RAM",
+      "I/O bus"
+    ],
+    "correctIndex": 0,
+    "explanation": "ALU performs arithmetic and logic."
+  },
+  {
+    "id": "computer-organization---architecture-002",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "Directs instruction execution?",
+    "options": [
+      "Control unit",
+      "Hard disk",
+      "Monitor",
+      "Keyboard"
+    ],
+    "correctIndex": 0,
+    "explanation": "Control unit coordinates processor operations."
+  },
+  {
+    "id": "computer-organization---architecture-003",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "CPU stands for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Program Utility",
+      "Central Peripheral Unit",
+      "Core Power Usage"
+    ],
+    "correctIndex": 0,
+    "explanation": "CPU is the central processing unit."
+  },
+  {
+    "id": "computer-organization---architecture-004",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Volatile memory?",
+    "options": [
+      "RAM",
+      "ROM",
+      "Flash",
+      "Optical disc"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM normally loses contents without power."
+  },
+  {
+    "id": "computer-organization---architecture-005",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "Cache is used to?",
+    "options": [
+      "Reduce average access time",
+      "Archive long term only",
+      "Replace registers",
+      "Display graphics"
+    ],
+    "correctIndex": 0,
+    "explanation": "Caches keep frequently used data close to CPU."
+  },
+  {
+    "id": "computer-organization---architecture-006",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "Bus carrying memory addresses?",
+    "options": [
+      "Address bus",
+      "Data bus",
+      "Control bus only",
+      "Power bus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Address bus conveys locations."
+  },
+  {
+    "id": "computer-organization---architecture-007",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Base-2 number system?",
+    "options": [
+      "Binary",
+      "Decimal",
+      "Octal",
+      "Hexadecimal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary uses 0 and 1."
+  },
+  {
+    "id": "computer-organization---architecture-008",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "Binary 1010 in decimal?",
+    "options": [
+      "10",
+      "8",
+      "12",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "1010₂ equals 10."
+  },
+  {
+    "id": "computer-organization---architecture-009",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "Register tracking next instruction?",
+    "options": [
+      "Program counter",
+      "Accumulator only",
+      "Status register",
+      "MDR"
+    ],
+    "correctIndex": 0,
+    "explanation": "Program counter holds next instruction address."
+  },
+  {
+    "id": "computer-organization---architecture-010",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "ISA defines?",
+    "options": [
+      "Machine instructions and programmer-visible state",
+      "Monitor resolution",
+      "RAM manufacturer",
+      "Web structure"
+    ],
+    "correctIndex": 0,
+    "explanation": "ISA specifies instructions, registers, and addressing."
+  },
+  {
+    "id": "computer-organization---architecture-011",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "Common RISC characteristic?",
+    "options": [
+      "Simple regular instruction set",
+      "No registers",
+      "Only variable-length instructions",
+      "Every instruction microcoded"
+    ],
+    "correctIndex": 0,
+    "explanation": "RISC designs favor regular instructions."
+  },
+  {
+    "id": "computer-organization---architecture-012",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "Pipelining means?",
+    "options": [
+      "Overlap stages of multiple instructions",
+      "Compress code",
+      "Partition disks",
+      "Encrypt RAM"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pipelining overlaps instruction processing stages."
+  },
+  {
+    "id": "computer-organization---architecture-013",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Firmware often stored in?",
+    "options": [
+      "ROM/flash",
+      "DRAM",
+      "Register",
+      "Cache only"
+    ],
+    "correctIndex": 0,
+    "explanation": "ROM/flash retains firmware without power."
+  },
+  {
+    "id": "computer-organization---architecture-014",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "Interrupt is?",
+    "options": [
+      "Signal requesting processor attention",
+      "Decimal number",
+      "Directory",
+      "Compiler variable"
+    ],
+    "correctIndex": 0,
+    "explanation": "Interrupts request processor service."
+  },
+  {
+    "id": "computer-organization---architecture-015",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "Display subsystem produces?",
+    "options": [
+      "Visual output",
+      "Only arithmetic",
+      "Next instruction address",
+      "Bus address"
+    ],
+    "correctIndex": 0,
+    "explanation": "Graphics/display hardware generates pixels."
+  },
+  {
+    "id": "computer-organization---architecture-016",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Accumulator often stores?",
+    "options": [
+      "Intermediate arithmetic results",
+      "All permanent files",
+      "Packets",
+      "HTML"
+    ],
+    "correctIndex": 0,
+    "explanation": "Accumulators hold ALU operands/results."
+  },
+  {
+    "id": "computer-organization---architecture-017",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "Clock speed measures?",
+    "options": [
+      "Cycles per second",
+      "Storage size",
+      "Core count only",
+      "Bus width only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clock frequency is measured in hertz."
+  },
+  {
+    "id": "computer-organization---architecture-018",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "Cache hit means?",
+    "options": [
+      "Requested data found in cache",
+      "Memory error always",
+      "Instruction skipped",
+      "Disk full"
+    ],
+    "correctIndex": 0,
+    "explanation": "A hit avoids slower-memory access."
+  },
+  {
+    "id": "computer-organization---architecture-019",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Separate instruction/data paths?",
+    "options": [
+      "Harvard architecture",
+      "Von Neumann only",
+      "Cloud architecture",
+      "Stack architecture only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Harvard separates instruction and data storage."
+  },
+  {
+    "id": "computer-organization---architecture-020",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "Signed binary representation?",
+    "options": [
+      "Two's complement",
+      "Image compression",
+      "URL encoding",
+      "Routing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Two's complement represents signed integers."
+  },
+  {
+    "id": "computer-organization---architecture-021",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "Opcode specifies?",
+    "options": [
+      "Operation performed by instruction",
+      "Only address",
+      "Connector",
+      "Cache policy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opcode identifies the instruction operation."
+  },
+  {
+    "id": "computer-organization---architecture-022",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Fastest small CPU storage?",
+    "options": [
+      "Register",
+      "RAM",
+      "SSD",
+      "Hard disk"
+    ],
+    "correctIndex": 0,
+    "explanation": "Registers are high-speed CPU storage."
+  },
+  {
+    "id": "computer-organization---architecture-023",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "medium",
+    "question": "DMA means?",
+    "options": [
+      "Direct Memory Access",
+      "Dynamic Math Array",
+      "Digital Memory Address",
+      "Data Machine Arithmetic"
+    ],
+    "correctIndex": 0,
+    "explanation": "DMA transfers data with limited CPU involvement."
+  },
+  {
+    "id": "computer-organization---architecture-024",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "hard",
+    "question": "Bus width affects?",
+    "options": [
+      "Bits transferred/addressed per operation",
+      "OS name",
+      "Language syntax",
+      "Monitor color"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bus width affects transfer capacity and address range."
+  },
+  {
+    "id": "computer-organization---architecture-025",
+    "subject": "Computer Organization & Architecture",
+    "difficulty": "easy",
+    "question": "Instruction cycle often includes?",
+    "options": [
+      "Fetch, decode, execute",
+      "Install only",
+      "Web request",
+      "Database transaction"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are common instruction-processing stages."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-001",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "Set with no elements?",
+    "options": [
+      "Empty set",
+      "Universal set",
+      "Singleton",
+      "Power set"
+    ],
+    "correctIndex": 0,
+    "explanation": "The empty set contains no elements."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-002",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "Cardinality of {a,b,c}?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are three distinct elements."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-003",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "A proposition is?",
+    "options": [
+      "Statement with a truth value",
+      "Always true",
+      "Always false",
+      "Question"
+    ],
+    "correctIndex": 0,
+    "explanation": "A proposition is true or false."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-004",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "Negation of p AND q?",
+    "options": [
+      "NOT p OR NOT q",
+      "NOT p AND NOT q",
+      "p OR q",
+      "p AND NOT q"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is De Morgan's law."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-005",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "Reflexive, symmetric, transitive relation?",
+    "options": [
+      "Equivalence relation",
+      "Partial function",
+      "Injective map always",
+      "Tree"
+    ],
+    "correctIndex": 0,
+    "explanation": "These properties define equivalence relations."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-006",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "Subsets of n-element set?",
+    "options": [
+      "2^n",
+      "n^2",
+      "n!",
+      "2n"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each element is included or excluded."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-007",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "Contrapositive of p implies q?",
+    "options": [
+      "Not q implies not p",
+      "Not p implies not q",
+      "q implies p",
+      "p and q"
+    ],
+    "correctIndex": 0,
+    "explanation": "The contrapositive is logically equivalent."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-008",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "Function domain is?",
+    "options": [
+      "Allowed inputs",
+      "Outputs only",
+      "Graph only",
+      "Range only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Domain is the set of permitted inputs."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-009",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "Graph consists of?",
+    "options": [
+      "Vertices and edges",
+      "Rows only",
+      "Classes and objects",
+      "Bits only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Graphs model relationships."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-010",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "Tree with n vertices has edges?",
+    "options": [
+      "n - 1",
+      "n",
+      "n + 1",
+      "2n"
+    ],
+    "correctIndex": 0,
+    "explanation": "A finite tree has n−1 edges."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-011",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "Fair coin probability of heads?",
+    "options": [
+      "1/2",
+      "1/4",
+      "1",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Two equally likely outcomes give 1/2."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-012",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "5 factorial equals?",
+    "options": [
+      "120",
+      "25",
+      "60",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "5! = 120."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-013",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "True only when both inputs true?",
+    "options": [
+      "AND",
+      "OR",
+      "XOR",
+      "NOT"
+    ],
+    "correctIndex": 0,
+    "explanation": "Conjunction requires both propositions true."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-014",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "Bijection is?",
+    "options": [
+      "Injective and surjective function",
+      "Symmetric relation",
+      "Many-to-one function",
+      "Cycle"
+    ],
+    "correctIndex": 0,
+    "explanation": "A bijection is one-to-one and onto."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-015",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "Sum of first n positive integers?",
+    "options": [
+      "n(n+1)/2",
+      "n^2",
+      "2^n",
+      "n!"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the arithmetic series formula."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-016",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "Prime number?",
+    "options": [
+      "13",
+      "15",
+      "21",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "13 has only 1 and itself as positive divisors."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-017",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "GCD of 18 and 24?",
+    "options": [
+      "6",
+      "3",
+      "12",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "6 is the greatest common divisor."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-018",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "Degree of vertex counts?",
+    "options": [
+      "Incident edges",
+      "Colors",
+      "Components only",
+      "Path length only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Degree counts incident edges."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-019",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "Matrix used to?",
+    "options": [
+      "Represent linear systems/transforms",
+      "Store only strings",
+      "Replace sets",
+      "Define grammar only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Matrices represent linear systems and transformations."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-020",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "Determinant of 2x2 identity?",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The identity matrix determinant is 1."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-021",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "Sequence with constant difference?",
+    "options": [
+      "Arithmetic progression",
+      "Geometric progression",
+      "Fibonacci always",
+      "Random sequence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arithmetic sequences have a common difference."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-022",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "log base 2 of 8?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "2³ equals 8."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-023",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "medium",
+    "question": "Injective function guarantees?",
+    "options": [
+      "Distinct inputs have distinct outputs",
+      "Every output used",
+      "Input maps to itself",
+      "No domain"
+    ],
+    "correctIndex": 0,
+    "explanation": "Injectivity means one-to-one."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-024",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "hard",
+    "question": "Assume opposite and derive contradiction?",
+    "options": [
+      "Proof by contradiction",
+      "Direct proof only",
+      "Listing only",
+      "Induction only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Contradiction rules out the negation."
+  },
+  {
+    "id": "discrete-mathematics---mathematics-025",
+    "subject": "Discrete Mathematics / Mathematics",
+    "difficulty": "easy",
+    "question": "Induction proves statements indexed by?",
+    "options": [
+      "Natural numbers",
+      "Only drawings",
+      "Database constraints",
+      "Network packets"
+    ],
+    "correctIndex": 0,
+    "explanation": "Induction uses a base case and inductive step."
+  },
+  {
+    "id": "digital-electronics-001",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Gate outputs 1 only if all inputs are 1?",
+    "options": [
+      "AND",
+      "OR",
+      "XOR",
+      "NOR"
+    ],
+    "correctIndex": 0,
+    "explanation": "AND requires every input to be true."
+  },
+  {
+    "id": "digital-electronics-002",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "Complement of AND gate?",
+    "options": [
+      "NAND",
+      "NOR",
+      "XOR",
+      "XNOR"
+    ],
+    "correctIndex": 0,
+    "explanation": "NAND negates AND."
+  },
+  {
+    "id": "digital-electronics-003",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "Combinations for 3 binary inputs?",
+    "options": [
+      "8",
+      "6",
+      "3",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 2³ combinations."
+  },
+  {
+    "id": "digital-electronics-004",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Base-16 system?",
+    "options": [
+      "Hexadecimal",
+      "Binary",
+      "Octal",
+      "Decimal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hexadecimal uses 16 symbols."
+  },
+  {
+    "id": "digital-electronics-005",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "XOR output for 0 and 1?",
+    "options": [
+      "1",
+      "0",
+      "Undefined",
+      "Clock-dependent"
+    ],
+    "correctIndex": 0,
+    "explanation": "XOR is true when inputs differ."
+  },
+  {
+    "id": "digital-electronics-006",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "Circuit storing one bit?",
+    "options": [
+      "Flip-flop",
+      "Decoder",
+      "Multiplexer",
+      "Adder"
+    ],
+    "correctIndex": 0,
+    "explanation": "A flip-flop is a bistable storage element."
+  },
+  {
+    "id": "digital-electronics-007",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Multiplexer does what?",
+    "options": [
+      "Selects one of many inputs",
+      "Decodes one input to many outputs",
+      "Adds numbers",
+      "Stores permanently"
+    ],
+    "correctIndex": 0,
+    "explanation": "A mux routes a selected input."
+  },
+  {
+    "id": "digital-electronics-008",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "Decoder does what?",
+    "options": [
+      "Activates output based on input code",
+      "Selects one input",
+      "Stores word",
+      "Amplifies sound"
+    ],
+    "correctIndex": 0,
+    "explanation": "A decoder maps codes to output lines."
+  },
+  {
+    "id": "digital-electronics-009",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "T flip-flop toggles when?",
+    "options": [
+      "T=1 at active clock event",
+      "T=0 always",
+      "No clock",
+      "Only reset"
+    ],
+    "correctIndex": 0,
+    "explanation": "T high causes toggling."
+  },
+  {
+    "id": "digital-electronics-010",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Bits in a nibble?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "A nibble contains four bits."
+  },
+  {
+    "id": "digital-electronics-011",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "Functionally complete gate alone?",
+    "options": [
+      "NAND",
+      "XOR only",
+      "AND only",
+      "Buffer only"
+    ],
+    "correctIndex": 0,
+    "explanation": "NAND can implement any Boolean function."
+  },
+  {
+    "id": "digital-electronics-012",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "Karnaugh map simplifies?",
+    "options": [
+      "Boolean expressions",
+      "Network routes",
+      "Arrays",
+      "CPU scheduling"
+    ],
+    "correctIndex": 0,
+    "explanation": "K-maps group adjacent minterms."
+  },
+  {
+    "id": "digital-electronics-013",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Adds two bits and outputs sum/carry?",
+    "options": [
+      "Half adder",
+      "Decoder",
+      "Mux",
+      "Counter"
+    ],
+    "correctIndex": 0,
+    "explanation": "A half adder adds two input bits."
+  },
+  {
+    "id": "digital-electronics-014",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "Adder with carry-in?",
+    "options": [
+      "Full adder",
+      "Half adder",
+      "Encoder",
+      "Latch"
+    ],
+    "correctIndex": 0,
+    "explanation": "A full adder includes carry-in."
+  },
+  {
+    "id": "digital-electronics-015",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "Decimal 5 in binary?",
+    "options": [
+      "101",
+      "110",
+      "111",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "5 equals 4+1."
+  },
+  {
+    "id": "digital-electronics-016",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Counter does what?",
+    "options": [
+      "Advances through states",
+      "Selects input only",
+      "Simplifies equations",
+      "Converts analog always"
+    ],
+    "correctIndex": 0,
+    "explanation": "Counters follow a state sequence."
+  },
+  {
+    "id": "digital-electronics-017",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "Analog to digital conversion?",
+    "options": [
+      "ADC",
+      "DAC",
+      "Encoder only",
+      "Demultiplexer"
+    ],
+    "correctIndex": 0,
+    "explanation": "ADC samples and quantizes analog input."
+  },
+  {
+    "id": "digital-electronics-018",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "DAC does what?",
+    "options": [
+      "Digital to analog conversion",
+      "Analog to digital",
+      "Adds bits",
+      "Stores state"
+    ],
+    "correctIndex": 0,
+    "explanation": "DAC produces analog representation."
+  },
+  {
+    "id": "digital-electronics-019",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "A + 0 = A is which law?",
+    "options": [
+      "Identity law",
+      "Complement law",
+      "Absorption only",
+      "De Morgan"
+    ],
+    "correctIndex": 0,
+    "explanation": "OR with zero leaves A unchanged."
+  },
+  {
+    "id": "digital-electronics-020",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "Complement of A AND B?",
+    "options": [
+      "NOT A OR NOT B",
+      "NOT A AND NOT B",
+      "A OR B",
+      "A AND NOT B"
+    ],
+    "correctIndex": 0,
+    "explanation": "De Morgan's law gives this identity."
+  },
+  {
+    "id": "digital-electronics-021",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "One input routed to selected output?",
+    "options": [
+      "Demultiplexer",
+      "Multiplexer",
+      "Full adder",
+      "Comparator"
+    ],
+    "correctIndex": 0,
+    "explanation": "A demux routes one input to one output."
+  },
+  {
+    "id": "digital-electronics-022",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Propagation delay is?",
+    "options": [
+      "Time from input change to output response",
+      "Gate count",
+      "Memory capacity",
+      "Clock voltage"
+    ],
+    "correctIndex": 0,
+    "explanation": "It measures circuit response time."
+  },
+  {
+    "id": "digital-electronics-023",
+    "subject": "Digital Electronics",
+    "difficulty": "medium",
+    "question": "Compare two binary values?",
+    "options": [
+      "Comparator",
+      "Counter",
+      "Encoder",
+      "Shift register"
+    ],
+    "correctIndex": 0,
+    "explanation": "A comparator determines equality or magnitude."
+  },
+  {
+    "id": "digital-electronics-024",
+    "subject": "Digital Electronics",
+    "difficulty": "hard",
+    "question": "Group of flip-flops storing bits?",
+    "options": [
+      "Register",
+      "Logic gate",
+      "Resistor",
+      "Fan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Registers store multi-bit values."
+  },
+  {
+    "id": "digital-electronics-025",
+    "subject": "Digital Electronics",
+    "difficulty": "easy",
+    "question": "Gate true when inputs differ?",
+    "options": [
+      "XOR",
+      "XNOR",
+      "AND",
+      "NOR"
+    ],
+    "correctIndex": 0,
+    "explanation": "XOR outputs true for unequal inputs."
+  },
+  {
+    "id": "cyber-security-001",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Phishing is?",
+    "options": [
+      "Deceptive attempt to steal sensitive data",
+      "Backup strategy",
+      "Compression",
+      "Routing protocol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phishing impersonates trusted sources."
+  },
+  {
+    "id": "cyber-security-002",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "Strong password practice?",
+    "options": [
+      "Unique long passphrase per account",
+      "Reuse one short password",
+      "Share in public",
+      "Use name only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unique long passwords reduce guessing and reuse risks."
+  },
+  {
+    "id": "cyber-security-003",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "MFA adds?",
+    "options": [
+      "Additional verification factor",
+      "Shorter password",
+      "Public access",
+      "Backup browser"
+    ],
+    "correctIndex": 0,
+    "explanation": "MFA combines multiple factor types."
+  },
+  {
+    "id": "cyber-security-004",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Malware is?",
+    "options": [
+      "Software intended for harmful/unauthorized activity",
+      "Database table",
+      "Network cable",
+      "License"
+    ],
+    "correctIndex": 0,
+    "explanation": "Malware includes ransomware and spyware."
+  },
+  {
+    "id": "cyber-security-005",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "Encryption can provide?",
+    "options": [
+      "Data confidentiality",
+      "Guaranteed availability",
+      "Automatic backup",
+      "Perfect security"
+    ],
+    "correctIndex": 0,
+    "explanation": "Encryption protects confidentiality but not every risk."
+  },
+  {
+    "id": "cyber-security-006",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "Ransomware typically?",
+    "options": [
+      "Locks/encrypts data for extortion",
+      "Firewall rule",
+      "Password manager",
+      "Secure protocol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ransomware denies access to extort victims."
+  },
+  {
+    "id": "cyber-security-007",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Least privilege means?",
+    "options": [
+      "Grant only needed permissions",
+      "Give everyone admin",
+      "Disable logs",
+      "Share accounts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Access should be limited to task needs."
+  },
+  {
+    "id": "cyber-security-008",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "Firewall is used for?",
+    "options": [
+      "Filtering traffic by rules",
+      "Password generation only",
+      "Hardware repair",
+      "Compression"
+    ],
+    "correctIndex": 0,
+    "explanation": "Firewalls enforce traffic policies."
+  },
+  {
+    "id": "cyber-security-009",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "HTTPS protects?",
+    "options": [
+      "Data in transit using TLS",
+      "All endpoint files",
+      "Truth of every claim",
+      "Every site from flaws"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTTPS protects the connection, not every endpoint risk."
+  },
+  {
+    "id": "cyber-security-010",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Vulnerability is?",
+    "options": [
+      "Weakness that may be exploited",
+      "Feature request",
+      "Backup copy",
+      "Successful login"
+    ],
+    "correctIndex": 0,
+    "explanation": "A vulnerability can enable unwanted impact."
+  },
+  {
+    "id": "cyber-security-011",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "Social engineering manipulates?",
+    "options": [
+      "People to bypass security",
+      "Algorithm speed",
+      "Packet compression",
+      "Disk encryption"
+    ],
+    "correctIndex": 0,
+    "explanation": "It exploits human behavior."
+  },
+  {
+    "id": "cyber-security-012",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "Security updates help?",
+    "options": [
+      "Fix bugs and vulnerabilities",
+      "Increase password reuse",
+      "Disable auth",
+      "Remove encryption"
+    ],
+    "correctIndex": 0,
+    "explanation": "Updates often patch security defects."
+  },
+  {
+    "id": "cyber-security-013",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Backup best practice?",
+    "options": [
+      "Keep separated, tested copies",
+      "One connected copy only",
+      "Never test restore",
+      "Public admin password"
+    ],
+    "correctIndex": 0,
+    "explanation": "Separated tested backups improve resilience."
+  },
+  {
+    "id": "cyber-security-014",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "Password storage should use?",
+    "options": [
+      "Salted password-hashing function",
+      "Reversible public-key encryption only",
+      "Plaintext",
+      "MFA replacement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use dedicated slow password-hashing algorithms and unique salts."
+  },
+  {
+    "id": "cyber-security-015",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "VPN commonly creates?",
+    "options": [
+      "Encrypted tunnel over another network",
+      "Physical cable",
+      "Guaranteed anonymity",
+      "Antivirus replacement"
+    ],
+    "correctIndex": 0,
+    "explanation": "VPNs protect traffic between endpoints depending on setup."
+  },
+  {
+    "id": "cyber-security-016",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Zero-day vulnerability means?",
+    "options": [
+      "No vendor fix available when discovered/exploited",
+      "Password expires today",
+      "Zero users",
+      "Failed backup"
+    ],
+    "correctIndex": 0,
+    "explanation": "A zero-day has no available patch at the time of exploitation."
+  },
+  {
+    "id": "cyber-security-017",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "SQL injection is?",
+    "options": [
+      "Input alters query structure",
+      "Disk encryption",
+      "Secure login",
+      "Topology"
+    ],
+    "correctIndex": 0,
+    "explanation": "Parameterized queries help prevent SQL injection."
+  },
+  {
+    "id": "cyber-security-018",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "XSS is?",
+    "options": [
+      "Malicious script injected into web content",
+      "Cable type",
+      "CPU policy",
+      "Backup format"
+    ],
+    "correctIndex": 0,
+    "explanation": "XSS can execute attacker-controlled scripts in a browser."
+  },
+  {
+    "id": "cyber-security-019",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Suspicious attachment:",
+    "options": [
+      "Verify sender/context before opening",
+      "Open immediately",
+      "Forward to all",
+      "Disable antivirus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unexpected attachments should be verified."
+  },
+  {
+    "id": "cyber-security-020",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "Security incident is?",
+    "options": [
+      "Event threatening confidentiality, integrity, or availability",
+      "Font update",
+      "Backup only",
+      "Style preference"
+    ],
+    "correctIndex": 0,
+    "explanation": "Incidents may involve compromise or unauthorized access."
+  },
+  {
+    "id": "cyber-security-021",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "Integrity in CIA triad means?",
+    "options": [
+      "Data stays accurate and unaltered without authorization",
+      "Data is public",
+      "Always online",
+      "No login"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrity protects correctness from unauthorized modification."
+  },
+  {
+    "id": "cyber-security-022",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Availability means?",
+    "options": [
+      "Authorized access when needed",
+      "Always encrypted",
+      "Anonymous users",
+      "Never-expiring passwords"
+    ],
+    "correctIndex": 0,
+    "explanation": "Availability keeps services accessible."
+  },
+  {
+    "id": "cyber-security-023",
+    "subject": "Cyber Security",
+    "difficulty": "medium",
+    "question": "Safer public Wi-Fi behavior?",
+    "options": [
+      "Use HTTPS and updated devices",
+      "Disable updates",
+      "Share all files",
+      "Ignore certificate warnings"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTTPS and updates reduce risk."
+  },
+  {
+    "id": "cyber-security-024",
+    "subject": "Cyber Security",
+    "difficulty": "hard",
+    "question": "Responsible disclosure means?",
+    "options": [
+      "Report a flaw privately to the owner",
+      "Publish stolen data",
+      "Exploit for profit",
+      "Never notify anyone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Coordinated disclosure allows fixes."
+  },
+  {
+    "id": "cyber-security-025",
+    "subject": "Cyber Security",
+    "difficulty": "easy",
+    "question": "Verify a user's identity with?",
+    "options": [
+      "Authentication",
+      "Authorization only",
+      "Compression",
+      "Load balancing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Authentication establishes identity."
+  },
+  {
+    "id": "algorithms---complexity-001",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "Big-O notation describes?",
+    "options": [
+      "Asymptotic upper bound",
+      "Exact runtime always",
+      "Memory address",
+      "Compiler version"
+    ],
+    "correctIndex": 0,
+    "explanation": "Big-O describes an asymptotic upper bound."
+  },
+  {
+    "id": "algorithms---complexity-002",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "Linear search worst-case time?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "It may inspect every item."
+  },
+  {
+    "id": "algorithms---complexity-003",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "Binary search requires?",
+    "options": [
+      "Sorted data",
+      "A linked list only",
+      "Unique values only",
+      "A graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search relies on sorted order."
+  },
+  {
+    "id": "algorithms---complexity-004",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "Stable sort preserves?",
+    "options": [
+      "Relative order of equal keys",
+      "Input size",
+      "Memory addresses",
+      "Duplicate removal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stability keeps equal-key items in original relative order."
+  },
+  {
+    "id": "algorithms---complexity-005",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "Greedy algorithms choose?",
+    "options": [
+      "Locally optimal choices",
+      "Every possible solution",
+      "Only random choices",
+      "Recursive calls only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Greedy algorithms make locally optimal decisions."
+  },
+  {
+    "id": "algorithms---complexity-006",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "Dynamic programming commonly uses?",
+    "options": [
+      "Overlapping subproblems and optimal substructure",
+      "Only sorting",
+      "Only graphs",
+      "No stored results"
+    ],
+    "correctIndex": 0,
+    "explanation": "DP reuses solutions to subproblems."
+  },
+  {
+    "id": "algorithms---complexity-007",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "Recurrence relation defines?",
+    "options": [
+      "Sequence terms from prior terms",
+      "A CSS rule",
+      "A database key",
+      "A network port"
+    ],
+    "correctIndex": 0,
+    "explanation": "Recurrences define terms using earlier terms."
+  },
+  {
+    "id": "algorithms---complexity-008",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "O(1) complexity means?",
+    "options": [
+      "Constant asymptotic time",
+      "One second exactly",
+      "One instruction always",
+      "No memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Constant time does not depend on input size asymptotically."
+  },
+  {
+    "id": "algorithms---complexity-009",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "Which is a divide-and-conquer algorithm?",
+    "options": [
+      "Merge sort",
+      "Linear search",
+      "Insertion into stack",
+      "Counting only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge sort divides, solves, and combines."
+  },
+  {
+    "id": "algorithms---complexity-010",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "Worst-case quicksort time?",
+    "options": [
+      "O(n^2)",
+      "O(log n)",
+      "O(n) always",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Poor pivots can produce quadratic work."
+  },
+  {
+    "id": "algorithms---complexity-011",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "BFS finds shortest paths in?",
+    "options": [
+      "Unweighted graphs",
+      "All weighted graphs",
+      "Only trees with negative edges",
+      "Any graph with negative cycles"
+    ],
+    "correctIndex": 0,
+    "explanation": "BFS finds minimum-edge paths in unweighted graphs."
+  },
+  {
+    "id": "algorithms---complexity-012",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "Topological ordering applies to?",
+    "options": [
+      "Directed acyclic graphs",
+      "Every cyclic graph",
+      "Undirected multigraph only",
+      "Arrays"
+    ],
+    "correctIndex": 0,
+    "explanation": "A DAG has a topological ordering."
+  },
+  {
+    "id": "algorithms---complexity-013",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "A spanning tree connects?",
+    "options": [
+      "All vertices without cycles",
+      "One vertex only",
+      "Only directed cycles",
+      "Every possible edge"
+    ],
+    "correctIndex": 0,
+    "explanation": "A spanning tree connects all vertices and is acyclic."
+  },
+  {
+    "id": "algorithms---complexity-014",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "Kruskal's algorithm finds?",
+    "options": [
+      "Minimum spanning tree",
+      "String prefix",
+      "Shortest path with negatives",
+      "Sort stability"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kruskal adds lowest-weight non-cycling edges."
+  },
+  {
+    "id": "algorithms---complexity-015",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "Big-Theta denotes?",
+    "options": [
+      "Asymptotically tight bound",
+      "Lower bound only",
+      "Upper bound only",
+      "Exact seconds"
+    ],
+    "correctIndex": 0,
+    "explanation": "Theta bounds growth above and below."
+  },
+  {
+    "id": "algorithms---complexity-016",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "Which structure supports efficient union-find?",
+    "options": [
+      "Disjoint-set forest",
+      "Stack only",
+      "Queue only",
+      "Trie"
+    ],
+    "correctIndex": 0,
+    "explanation": "Disjoint sets support union and find operations."
+  },
+  {
+    "id": "algorithms---complexity-017",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "A base case in recursion?",
+    "options": [
+      "Stops recursive expansion",
+      "Starts infinite recursion",
+      "Allocates every object",
+      "Sorts data"
+    ],
+    "correctIndex": 0,
+    "explanation": "A base case terminates recursion."
+  },
+  {
+    "id": "algorithms---complexity-018",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "Memoization stores?",
+    "options": [
+      "Previously computed results",
+      "Only input files",
+      "Network packets",
+      "Random values"
+    ],
+    "correctIndex": 0,
+    "explanation": "Memoization avoids repeated computations."
+  },
+  {
+    "id": "algorithms---complexity-019",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "Which complexity grows fastest here?",
+    "options": [
+      "O(n^2)",
+      "O(log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quadratic growth eventually exceeds the listed rates."
+  },
+  {
+    "id": "algorithms---complexity-020",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "A heuristic is?",
+    "options": [
+      "Practical rule that may not guarantee optimum",
+      "Always optimal proof",
+      "A database schema",
+      "A CPU register"
+    ],
+    "correctIndex": 0,
+    "explanation": "Heuristics trade guarantees for practical guidance."
+  },
+  {
+    "id": "algorithms---complexity-021",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "Which graph algorithm uses a priority queue in common implementations?",
+    "options": [
+      "Dijkstra",
+      "BFS always",
+      "DFS always",
+      "KMP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dijkstra repeatedly extracts the smallest tentative distance."
+  },
+  {
+    "id": "algorithms---complexity-022",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "KMP is used for?",
+    "options": [
+      "String pattern matching",
+      "Disk scheduling",
+      "SQL joins",
+      "Memory allocation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Knuth–Morris–Pratt searches patterns efficiently."
+  },
+  {
+    "id": "algorithms---complexity-023",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "medium",
+    "question": "A complete graph has?",
+    "options": [
+      "An edge between every pair of distinct vertices",
+      "No edges",
+      "Exactly one cycle",
+      "Only directed edges"
+    ],
+    "correctIndex": 0,
+    "explanation": "Every distinct vertex pair is connected."
+  },
+  {
+    "id": "algorithms---complexity-024",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "hard",
+    "question": "What does amortized analysis measure?",
+    "options": [
+      "Average cost over a sequence of operations",
+      "Average user rating",
+      "Exact worst-case each operation",
+      "CPU temperature"
+    ],
+    "correctIndex": 0,
+    "explanation": "Amortized cost spreads occasional expensive operations over a sequence."
+  },
+  {
+    "id": "algorithms---complexity-025",
+    "subject": "Algorithms & Complexity",
+    "difficulty": "easy",
+    "question": "A lower bound on comparison sorting is?",
+    "options": [
+      "Ω(n log n)",
+      "Ω(1) only",
+      "Ω(log log n)",
+      "Ω(n^3)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Comparison sorting requires Ω(n log n) comparisons in general."
+  },
+  {
+    "id": "computer-fundamentals-001",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "CPU is often called the computer's?",
+    "options": [
+      "Processor",
+      "Printer",
+      "Storage disk",
+      "Display"
+    ],
+    "correctIndex": 0,
+    "explanation": "The CPU executes instructions."
+  },
+  {
+    "id": "computer-fundamentals-002",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "Which is an input device?",
+    "options": [
+      "Keyboard",
+      "Monitor",
+      "Speaker",
+      "Projector"
+    ],
+    "correctIndex": 0,
+    "explanation": "A keyboard sends input to a computer."
+  },
+  {
+    "id": "computer-fundamentals-003",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "Which is an output device?",
+    "options": [
+      "Monitor",
+      "Mouse",
+      "Scanner",
+      "Microphone"
+    ],
+    "correctIndex": 0,
+    "explanation": "A monitor displays output."
+  },
+  {
+    "id": "computer-fundamentals-004",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "One byte contains how many bits in common systems?",
+    "options": [
+      "8",
+      "4",
+      "16",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "A byte is commonly eight bits; C defines byte as char size."
+  },
+  {
+    "id": "computer-fundamentals-005",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "Which memory is volatile?",
+    "options": [
+      "RAM",
+      "ROM",
+      "DVD",
+      "Flash drive"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM normally loses contents without power."
+  },
+  {
+    "id": "computer-fundamentals-006",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "Which is system software?",
+    "options": [
+      "Operating system",
+      "Photo document",
+      "Presentation file",
+      "Spreadsheet data"
+    ],
+    "correctIndex": 0,
+    "explanation": "The OS manages hardware and provides services."
+  },
+  {
+    "id": "computer-fundamentals-007",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "Which is application software?",
+    "options": [
+      "Word processor",
+      "Device firmware only",
+      "Bootloader only",
+      "Kernel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Word processors are user-facing applications."
+  },
+  {
+    "id": "computer-fundamentals-008",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "Binary digit values are?",
+    "options": [
+      "0 and 1",
+      "1 and 2",
+      "0 through 9",
+      "A through F only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary uses two digits."
+  },
+  {
+    "id": "computer-fundamentals-009",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "Which is an example of secondary storage?",
+    "options": [
+      "SSD",
+      "CPU register",
+      "Cache register",
+      "ALU"
+    ],
+    "correctIndex": 0,
+    "explanation": "SSD stores data persistently."
+  },
+  {
+    "id": "computer-fundamentals-010",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "What does GUI stand for?",
+    "options": [
+      "Graphical User Interface",
+      "General Utility Input",
+      "Global User Internet",
+      "Graphic Unit Instruction"
+    ],
+    "correctIndex": 0,
+    "explanation": "GUI enables interaction through visual elements."
+  },
+  {
+    "id": "computer-fundamentals-011",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "Which unit is commonly used for processor frequency?",
+    "options": [
+      "Hertz",
+      "Litres",
+      "Pixels",
+      "Celsius only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clock frequency is measured in hertz."
+  },
+  {
+    "id": "computer-fundamentals-012",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "What does URL identify?",
+    "options": [
+      "Resource address",
+      "CPU instruction",
+      "Memory chip",
+      "Password hash"
+    ],
+    "correctIndex": 0,
+    "explanation": "A URL locates a resource."
+  },
+  {
+    "id": "computer-fundamentals-013",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "Which is an example of an operating system?",
+    "options": [
+      "Linux",
+      "HTML",
+      "SQL",
+      "JPEG"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linux is an operating system kernel/family."
+  },
+  {
+    "id": "computer-fundamentals-014",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "What is booting?",
+    "options": [
+      "Starting a computer and loading its OS",
+      "Printing a page",
+      "Deleting files",
+      "Compiling HTML"
+    ],
+    "correctIndex": 0,
+    "explanation": "Booting initializes hardware and loads system software."
+  },
+  {
+    "id": "computer-fundamentals-015",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "Which number system uses digits 0–7?",
+    "options": [
+      "Octal",
+      "Binary",
+      "Decimal",
+      "Hexadecimal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Octal is base eight."
+  },
+  {
+    "id": "computer-fundamentals-016",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "Which number system uses digits 0–9?",
+    "options": [
+      "Decimal",
+      "Binary",
+      "Octal",
+      "Hexadecimal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decimal is base ten."
+  },
+  {
+    "id": "computer-fundamentals-017",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "Which is not an input device?",
+    "options": [
+      "Speaker",
+      "Mouse",
+      "Keyboard",
+      "Scanner"
+    ],
+    "correctIndex": 0,
+    "explanation": "A speaker outputs sound."
+  },
+  {
+    "id": "computer-fundamentals-018",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "What does RAM stand for?",
+    "options": [
+      "Random Access Memory",
+      "Read All Memory",
+      "Rapid Arithmetic Module",
+      "Remote Access Machine"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM is random access memory."
+  },
+  {
+    "id": "computer-fundamentals-019",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "What does ROM stand for?",
+    "options": [
+      "Read-Only Memory",
+      "Random Output Memory",
+      "Remote Operating Mode",
+      "Read Once Machine"
+    ],
+    "correctIndex": 0,
+    "explanation": "ROM retains programmed data without normal write operations."
+  },
+  {
+    "id": "computer-fundamentals-020",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "What is a file extension used for?",
+    "options": [
+      "Indicate file type/format convention",
+      "Set CPU speed",
+      "Encrypt all data",
+      "Define IP address"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extensions often signal a file format."
+  },
+  {
+    "id": "computer-fundamentals-021",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "Which is a web browser?",
+    "options": [
+      "Firefox",
+      "PostgreSQL",
+      "Linux kernel",
+      "Python"
+    ],
+    "correctIndex": 0,
+    "explanation": "Firefox is a browser."
+  },
+  {
+    "id": "computer-fundamentals-022",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "Which device connects a computer to a network?",
+    "options": [
+      "Network interface card",
+      "Plotter only",
+      "CPU cooler",
+      "Scanner"
+    ],
+    "correctIndex": 0,
+    "explanation": "A network interface provides network connectivity."
+  },
+  {
+    "id": "computer-fundamentals-023",
+    "subject": "Computer Fundamentals",
+    "difficulty": "medium",
+    "question": "What is cloud computing?",
+    "options": [
+      "On-demand computing services over a network",
+      "Only local spreadsheets",
+      "A type of keyboard",
+      "A printer mode"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cloud computing provides remote scalable resources."
+  },
+  {
+    "id": "computer-fundamentals-024",
+    "subject": "Computer Fundamentals",
+    "difficulty": "hard",
+    "question": "Which is an example of open-source software?",
+    "options": [
+      "LibreOffice",
+      "A closed proprietary app only",
+      "A hardware cable",
+      "A file extension"
+    ],
+    "correctIndex": 0,
+    "explanation": "LibreOffice is open-source office software."
+  },
+  {
+    "id": "computer-fundamentals-025",
+    "subject": "Computer Fundamentals",
+    "difficulty": "easy",
+    "question": "What does backup mean?",
+    "options": [
+      "Additional copy for recovery",
+      "Deleting old data",
+      "Formatting RAM",
+      "Changing a password"
+    ],
+    "correctIndex": 0,
+    "explanation": "Backups support recovery after loss."
+  }
+]
