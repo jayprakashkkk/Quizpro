@@ -42,10 +42,19 @@ function friendly(err){
  if(/same password|different from the old/i.test(m))return 'Naya password purane password se alag hona chahiye.';
  return m||'Kuch galat ho gaya. Dobara try karein.';
 }
+function getInitialUser(){
+ try {
+  const raw = localStorage.getItem('quizpro_auth_session');
+  if (raw) {
+   const parsed = JSON.parse(raw);
+   if (parsed?.user) return toUser(parsed.user);
+  }
+ } catch {}
+ return null;
+}
 function AuthGate(){
  const [mode,setMode]=useState('login');
- const [user,setUser]=useState(null);
- const [ready,setReady]=useState(false);
+ const [user,setUser]=useState(getInitialUser);
  const recovering=useRef(false);
  const [first,setFirst]=useState(''),[last,setLast]=useState(''),[email,setEmail]=useState(''),[password,setPassword]=useState(''),[confirmPassword,setConfirmPassword]=useState('');
  const [otp,setOtp]=useState(''),[resetEmail,setResetEmail]=useState('');
@@ -54,12 +63,12 @@ function AuthGate(){
  const [busy,setBusy]=useState(false);
  const signedIn=!!user;
  useEffect(()=>{
-  supabase.auth.getSession().then(({data})=>{if(data.session&&!recovering.current)setUser(toUser(data.session.user));setReady(true);});
+  supabase.auth.getSession().then(({data})=>{if(data?.session&&!recovering.current)setUser(toUser(data.session.user));});
   const {data:sub}=supabase.auth.onAuthStateChange((_event,session)=>{
    if(recovering.current)return;
    setUser(session?toUser(session.user):null);
   });
-  return()=>sub.subscription.unsubscribe();
+  return()=>sub?.subscription?.unsubscribe?.();
  },[]);
  function notify(text,type='error'){setMessage(text);setMessageType(type)}
  async function signUp(e){
@@ -121,7 +130,6 @@ function AuthGate(){
   finally{recovering.current=false;setBusy(false);}
  }
  async function signOut(){await supabase.auth.signOut();setUser(null);setMode('login');setPassword('');}
- if(!ready)return <div className="auth-screen"></div>;
  if(signedIn)return <><div className="account-strip"><span>Signed in as <b>{user.firstName} {user.lastName}</b></span><button onClick={signOut}>Log out</button></div><QuizApp userId={user.id}/></>;
  return <div className="auth-screen">
   <div className="auth-decoration auth-decoration-one"></div><div className="auth-decoration auth-decoration-two"></div>
