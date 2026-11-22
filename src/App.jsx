@@ -38,7 +38,8 @@ function friendly(err){
  if(/already registered|already been registered/i.test(m))return 'An account with this email already exists. Please log in.';
  if(/email not confirmed/i.test(m))return 'Please confirm your email first. Check your inbox or spam folder.';
  if(/rate limit|too many|security purposes/i.test(m))return 'Too many requests. Please try again in a few minutes.';
- if(/token has expired|invalid/i.test(m)&&/token|otp/i.test(m))return 'The verification code is invalid or has expired. Please request a new code.';
+ if(/expired/i.test(m))return 'The verification code has expired. Please request a new code.';
+ if(/incorrect|invalid.*otp|invalid.*code/i.test(m))return 'The verification code is incorrect. Please check the latest code in your email.';
  if(/same password|different from the old/i.test(m))return 'New password must be different from the old password.';
  return m||'Something went wrong. Please try again.';
 }

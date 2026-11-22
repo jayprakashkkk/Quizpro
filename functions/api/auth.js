@@ -174,10 +174,10 @@ export async function onRequestPost(context) {
       // Generate 6-digit OTP
       const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
-      // Upsert into quizpro_otps
+      // Upsert into quizpro_otps with generous 30-minute validity
       await runNeonSql(`
         INSERT INTO quizpro_otps (email, otp, expires_at)
-        VALUES ($1, $2, NOW() + INTERVAL '10 minutes')
+        VALUES ($1, $2, NOW() + INTERVAL '30 minutes')
         ON CONFLICT (email) DO UPDATE
         SET otp = EXCLUDED.otp, expires_at = EXCLUDED.expires_at, created_at = NOW();
       `, [email, otp]);
@@ -200,7 +200,7 @@ export async function onRequestPost(context) {
                 <div style="font-size: 34px; font-weight: 800; letter-spacing: 6px; color: #6258e8; font-family: monospace;">${otp}</div>
               </div>
               <p style="font-size: 12px; color: #858ba2; margin: 0;">
-                ⚠️ This code is valid for <b>10 minutes</b>. If you did not request this, please ignore this email.
+                ⚠️ This code is valid for <b>30 minutes</b>. If you did not request this, please ignore this email.
               </p>
             </div>
             <div style="padding: 16px 24px; background: #fafbfe; border-top: 1px solid #eef0f6; font-size: 11px; color: #9a9fb1; text-align: center;">
@@ -281,39 +281,40 @@ export async function onRequestPost(context) {
     // 4. VERIFY OTP & RESET PASSWORD
     if (action === 'reset-password') {
       const email = (body.email || '').trim().toLowerCase();
-      const otp = (body.otp || '').trim();
+      const otp = String(body.otp || '').replace(/\D/g, '').trim();
       const newPassword = body.newPassword || '';
 
       if (!email || !otp || !newPassword || newPassword.length < 6) {
-        return jsonResponse({ error: 'Valid email, OTP, and password (min 6 characters) required' }, 400);
+        return jsonResponse({ error: 'Valid email, OTP code, and password (min 6 characters) required.' }, 400);
       }
 
       const rows = await runNeonSql(
-        'SELECT otp, expires_at FROM quizpro_otps WHERE email = $1 LIMIT 1;',
+        'SELECT otp, (expires_at > NOW()) AS is_valid FROM quizpro_otps WHERE email = $1 LIMIT 1;',
         [email]
       );
 
       if (rows.length === 0) {
-        return jsonResponse({ error: 'Invalid or expired OTP code.' }, 400);
+        return jsonResponse({ error: 'No active verification code found for this email. Please request a new code.' }, 400);
       }
 
       const record = rows[0];
-      const expiresAt = new Date(record.expires_at).getTime();
 
-      if (Date.now() > expiresAt) {
-        return jsonResponse({ error: 'OTP code has expired. Please request a new code.' }, 400);
+      if (!record.is_valid) {
+        return jsonResponse({ error: 'The verification code has expired. Please request a new code.' }, 400);
       }
 
       if (record.otp !== otp && otp !== '123456') {
-        return jsonResponse({ error: 'Invalid OTP code. Please check and try again.' }, 400);
+        return jsonResponse({ error: 'Incorrect verification code. Please check the latest code in your email.' }, 400);
       }
 
-      // Update password in DB
+      // Upsert password in DB so it succeeds even if user wasn't registered in DB
       const newHash = await hashPassword(newPassword, email);
-      await runNeonSql(
-        'UPDATE quizpro_users SET password_hash = $1 WHERE email = $2;',
-        [newHash, email]
-      );
+      const userId = 'usr_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+      await runNeonSql(`
+        INSERT INTO quizpro_users (id, email, password_hash, first_name)
+        VALUES ($1, $2, $3, $4)
+        ON CONFLICT (email) DO UPDATE SET password_hash = EXCLUDED.password_hash;
+      `, [userId, email, newHash, email.split('@')[0]]);
 
       // Clean up OTP
       await runNeonSql('DELETE FROM quizpro_otps WHERE email = $1;', [email]);
