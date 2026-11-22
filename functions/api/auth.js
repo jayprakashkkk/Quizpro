@@ -189,14 +189,14 @@ export async function onRequestPost(context) {
               <h2 style="font-size: 19px; font-weight: 700; margin: 0 0 10px; color: #20233a;">Password Reset Code</h2>
               <p style="font-size: 14px; line-height: 1.6; color: #68708a; margin: 0 0 20px;">
                 Hello Learner,<br>
-                Aapke Quiz Pro account ke liye password reset request aayi hai. Verification ke liye niche diya gaya OTP enter karein:
+                We received a request to reset your Quiz Pro account password. Please enter the verification code below to set a new password:
               </p>
               <div style="background: #f0eeff; border: 2px dashed #6258e8; border-radius: 12px; padding: 18px; text-align: center; margin: 20px 0;">
                 <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 800; color: #6258e8; margin-bottom: 6px;">One-Time Password (OTP)</div>
                 <div style="font-size: 34px; font-weight: 800; letter-spacing: 6px; color: #6258e8; font-family: monospace;">${otp}</div>
               </div>
               <p style="font-size: 12px; color: #858ba2; margin: 0;">
-                ⚠️ Yeh code <b>10 minute</b> tak valid hai. Agar aapne request nahi ki to is email ko ignore karein.
+                ⚠️ This code is valid for <b>10 minutes</b>. If you did not request this, please ignore this email.
               </p>
             </div>
             <div style="padding: 16px 24px; background: #fafbfe; border-top: 1px solid #eef0f6; font-size: 11px; color: #9a9fb1; text-align: center;">
@@ -220,7 +220,7 @@ export async function onRequestPost(context) {
           body: JSON.stringify({
             from: 'QuizPro <onboarding@resend.dev>',
             to: [email],
-            subject: 'QuizPro: Password Reset OTP',
+            subject: 'QuizPro: Password Reset Verification Code',
             html: emailHtml
           })
         });
@@ -239,7 +239,7 @@ export async function onRequestPost(context) {
         ok: true,
         delivered,
         otp: delivered ? undefined : otp, // fallback for development/unregistered test emails
-        message: delivered ? 'OTP email bhej diya gaya hai. Inbox check karein.' : (devMessage || 'OTP generated')
+        message: delivered ? 'Verification code has been sent to your email.' : (devMessage || 'OTP generated')
       });
     }
 
@@ -250,7 +250,7 @@ export async function onRequestPost(context) {
       const newPassword = body.newPassword || '';
 
       if (!email || !otp || !newPassword || newPassword.length < 6) {
-        return jsonResponse({ error: 'Valid email, OTP, and password (min 6 chars) required' }, 400);
+        return jsonResponse({ error: 'Valid email, OTP, and password (min 6 characters) required' }, 400);
       }
 
       const rows = await runNeonSql(
@@ -266,11 +266,11 @@ export async function onRequestPost(context) {
       const expiresAt = new Date(record.expires_at).getTime();
 
       if (Date.now() > expiresAt) {
-        return jsonResponse({ error: 'OTP expire ho gaya hai. Dobara OTP mangwayein.' }, 400);
+        return jsonResponse({ error: 'OTP code has expired. Please request a new code.' }, 400);
       }
 
       if (record.otp !== otp && otp !== '123456') {
-        return jsonResponse({ error: 'OTP galat hai. Dobara check karein.' }, 400);
+        return jsonResponse({ error: 'Invalid OTP code. Please check and try again.' }, 400);
       }
 
       // Update password in DB

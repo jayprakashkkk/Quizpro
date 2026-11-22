@@ -22,7 +22,7 @@ function QuizApp({userId}){
  {screen==='home'&&<div className="home"><section className="hero"><div className="eyebrow">● YOUR KNOWLEDGE, YOUR PACE</div><h1>Learn smarter.<br/><em>Score higher.</em></h1><p>Focused practice for your journey. Test your fundamentals, understand every answer, and build confidence one quiz at a time.</p><div className="ticks"><span><Check/> 20 questions per test</span><span><Check/> Instant explanations</span><span><Check/> Progress saved to your account</span></div><div className="hero-art"><div className="orbit"></div><div className="orbital-icon"><BrainCircuit/></div><div className="float f1">Practice <small>with purpose</small></div><div className="float f2">Progress <small>you can track</small></div></div></section>
  <section className="setup card"><small className="kicker">READY WHEN YOU ARE</small><h2>Start a quiz</h2><p className="muted">Choose your focus and let's get started.</p><label htmlFor="subject">Choose subject</label><div className="selectbox"><BookOpen/><select id="subject" value={subject} onChange={e=>setSubject(e.target.value)}><option>All Subjects (Mixed)</option>{subjects.map(s=><option key={s}>{s}</option>)}</select></div><div className="facts"><div><b>20 questions</b><small>Every attempt</small></div><div><b>15 minutes</b><small>Optional timer</small></div></div><label className="toggle"><span><b>Timed mode</b><small>15 minutes for the full quiz</small></span><input type="checkbox" checked={timerOn} onChange={e=>setTimerOn(e.target.checked)}/></label><button className="primary wide" onClick={start}>Start Quiz <ArrowRight/></button><small className="note">Your progress is saved to your account.</small></section>
  <section className="stats"><div className="stat"><Flame/><b>{stats.streak}</b><small>{stats.streak?'Day streak':'Start your streak today'}</small></div><div className="stat"><TrendingUp/><b>{stats.avg===null?'—':stats.avg+'%'}</b><small>Average score</small></div><div className="stat"><Trophy/><b>{stats.best===null?'—':stats.best+'/20'}</b><small>Personal best</small></div><div className="stat"><ChartColumn/><b>{stats.n}</b><small>Attempts saved</small></div></section>
- <section className="history"><div className="section-head"><div><small className="kicker">KEEP THE MOMENTUM</small><h2>Recent attempts</h2></div><span>{synced?`Last ${recent.length} attempts · synced to your account`:'Sirf is device par save hai — account sync nahi ho paa raha'}</span></div>{stats.n>0&&stats.weakest&&<div className="insight"><b>Focus area</b><span>{stats.weakest.subject} — {stats.weakest.pct}% accuracy. Isko next practise karein.{stats.strongest&&stats.strongest.subject!==stats.weakest.subject?` Strongest: ${stats.strongest.subject} (${stats.strongest.pct}%).`:''}</span></div>}{!attempts.length?<div className="empty"><History/><div><b>Your journey starts here</b><p>Your last 10 quiz attempts will show up here.</p></div></div>:recent.map(a=><div className="attempt" key={a.id}><div><b>{a.subject}</b><small>{dateFmt(a.date)}</small></div><strong>{a.score}/20 <small>{a.percentage}%</small></strong><div className="mini"><span style={{width:a.percentage+'%'}}/></div></div>)}</section></div>}
+ <section className="history"><div className="section-head"><div><small className="kicker">KEEP THE MOMENTUM</small><h2>Recent attempts</h2></div><span>{synced?`Last ${recent.length} attempts · synced to your account`:'Saved on this device only — account sync unavailable'}</span></div>{stats.n>0&&stats.weakest&&<div className="insight"><b>Focus area</b><span>{stats.weakest.subject} — {stats.weakest.pct}% accuracy. Recommended to practice next.{stats.strongest&&stats.strongest.subject!==stats.weakest.subject?` Strongest: ${stats.strongest.subject} (${stats.strongest.pct}%).`:''}</span></div>}{!attempts.length?<div className="empty"><History/><div><b>Your journey starts here</b><p>Your last 10 quiz attempts will show up here.</p></div></div>:recent.map(a=><div className="attempt" key={a.id}><div><b>{a.subject}</b><small>{dateFmt(a.date)}</small></div><strong>{a.score}/20 <small>{a.percentage}%</small></strong><div className="mini"><span style={{width:a.percentage+'%'}}/></div></div>)}</section></div>}
  {screen==='quiz'&&current&&<section className="quiz"><div className="quiz-head"><button className="back" onClick={()=>setScreen('home')}><ChevronLeft/> Exit quiz</button><div className="meta"><span className="pill">{current.subject}</span>{timerOn&&<span className="timer"><Clock3/>{Math.floor(seconds/60).toString().padStart(2,'0')}:{(seconds%60).toString().padStart(2,'0')}</span>}</div></div><div className="progress-label"><b>Question {index+1} <span>/ 20</span></b><span>{Math.round((index+1)/20*100)}% complete</span></div><div className="progress"><span style={{width:(index+1)/20*100+'%'}}/></div><article className="card question"><div className="question-top"><span className={'difficulty '+current.difficulty}>{current.difficulty}</span><button className={'mark '+(marked.includes(index)?'on':'')} onClick={()=>setMarked(m=>m.includes(index)?m.filter(i=>i!==index):[...m,index])}><Flag/>{marked.includes(index)?'Marked for review':'Mark for review'}</button></div><h2>{current.question}</h2><div className="options">{current.options.map((o,i)=><button key={i} className={'option '+(answers[index]===i?'selected':'')} aria-pressed={answers[index]===i} onClick={()=>pick(i)}><span>{String.fromCharCode(65+i)}</span>{o}{answers[index]===i&&<Check className="chosen"/>}</button>)}</div><div className="qfoot"><span>{answers[index]===undefined?'Select one answer':'Answer selected'}</span><b>{answered} of 20 answered</b></div></article><div className="quiz-nav"><button className="secondary" disabled={index===0} onClick={()=>setIndex(i=>i-1)}><ChevronLeft/> Previous</button><div className="dots">{quiz.map((q,i)=><button key={q.id} aria-label={`Go to question ${i+1}`} title={`Question ${i+1}`} className={`${index===i?'active':''} ${answers[i]!==undefined?'done':''} ${marked.includes(i)?'flagged':''}`} onClick={()=>setIndex(i)}/>)}</div>{index<19?<button className="primary" onClick={()=>setIndex(i=>i+1)}>Next <ChevronRight/></button>:<button className="primary" onClick={()=>setConfirm(true)}>Submit quiz <Check/></button>}</div>
  {confirm&&<div className="backdrop"><div className="modal" role="dialog" aria-modal="true" aria-labelledby="confirm-title"><button className="close" onClick={()=>setConfirm(false)} aria-label="Close"><X/></button><h2 id="confirm-title">Ready to submit?</h2><p className="muted">Take one last look at your progress.</p><div className="confirm-stats"><div><b>{answered}</b><small>Answered</small></div><div><b>{20-answered}</b><small>Unanswered</small></div><div><b>{marked.length}</b><small>For review</small></div></div>{answered<20&&<p className="warning">You have {20-answered} unanswered questions.</p>}<button className="primary wide" onClick={()=>finish()}>Submit and see result <ArrowRight/></button><button className="text-btn" onClick={()=>setConfirm(false)}>Keep working</button></div></div>}</section>}
  {screen==='result'&&result&&<section className="results"><button className="back" onClick={()=>setScreen('home')}><ChevronLeft/> Dashboard</button><div className="result-title"><small className="kicker">QUIZ COMPLETED</small><h1>{result.percentage>=85?'Outstanding work.':result.percentage>=60?'Nice work.':'Keep building.'}</h1><p className="muted">Every attempt is progress. Review the details to make the next one even stronger.</p></div><div className="result-grid"><div className="card score-card"><div className="ring" style={{'--deg':result.percentage*3.6+'deg'}}><div><b>{result.percentage}%</b><small>score</small></div></div><h2>{result.score}<span> / 20</span></h2><b className="grade">{result.percentage>=85?'Excellent':result.percentage>=60?'Good':'Needs Improvement'}</b><div className="scoreline"><span>Correct answers</span><b>{result.score}</b></div><div className="scoreline"><span>Incorrect / skipped</span><b>{20-result.score}</b></div></div><div className="card breakdown"><small className="kicker">YOUR PERFORMANCE</small><h2>Subject breakdown</h2>{Object.entries(result.bySubject).map(([s,v])=><div className="barrow" key={s}><div><span>{s}</span><b>{v.correct}/{v.total}</b></div><div className="bar"><span style={{width:v.correct/v.total*100+'%'}}/></div></div>)}</div></div><div className="result-actions"><button className="primary" onClick={start}><RotateCcw/> Retry (New Quiz)</button><button className="secondary" onClick={()=>setScreen('review')}>Review Wrong Answers <ArrowRight/></button></div><p className="note">{dateFmt(result.date)} · {result.subject} · saved to your account</p></section>}
@@ -34,13 +34,13 @@ function validEmail(value){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim(
 function toUser(u){const m=u?.user_metadata||{};return {id:u?.id||'',firstName:m.firstName||'',lastName:m.lastName||'',email:u?.email||''};}
 function friendly(err){
  const m=String(err?.message||'');
- if(/invalid login credentials/i.test(m))return 'Email ya password galat hai. Dobara try karein.';
- if(/already registered|already been registered/i.test(m))return 'Is email se account pehle se bana hua hai. Please log in karein.';
- if(/email not confirmed/i.test(m))return 'Pehle apna email confirm karein (inbox/spam me confirmation mail check karein).';
- if(/rate limit|too many|security purposes/i.test(m))return 'Bahut zyada requests ho gayi. Thodi der baad dobara try karein.';
- if(/token has expired|invalid/i.test(m)&&/token|otp/i.test(m))return 'OTP galat ya expire ho gaya hai. Naya OTP mangwayein.';
- if(/same password|different from the old/i.test(m))return 'Naya password purane password se alag hona chahiye.';
- return m||'Kuch galat ho gaya. Dobara try karein.';
+ if(/invalid login credentials/i.test(m))return 'Invalid email or password. Please try again.';
+ if(/already registered|already been registered/i.test(m))return 'An account with this email already exists. Please log in.';
+ if(/email not confirmed/i.test(m))return 'Please confirm your email first. Check your inbox or spam folder.';
+ if(/rate limit|too many|security purposes/i.test(m))return 'Too many requests. Please try again in a few minutes.';
+ if(/token has expired|invalid/i.test(m)&&/token|otp/i.test(m))return 'The verification code is invalid or has expired. Please request a new code.';
+ if(/same password|different from the old/i.test(m))return 'New password must be different from the old password.';
+ return m||'Something went wrong. Please try again.';
 }
 function getInitialUser(){
  try {
@@ -85,7 +85,7 @@ function AuthGate(){
    // Agar email already registered hai to Supabase fake user bhejta hai jiska identities khali hota hai
    if(data.user&&Array.isArray(data.user.identities)&&data.user.identities.length===0)throw new Error('already registered');
    if(data.session){setUser(toUser(data.user));}
-   else{setMode('login');setPassword('');notify('Account ban gaya! Aapke email par confirmation link bheja gaya hai. Link par click karke confirm karein, phir log in karein.','success');}
+   else{setMode('login');setPassword('');notify('Account created successfully! Please log in with your credentials.','success');}
   } catch(err){notify(friendly(err));}
   finally{setBusy(false);}
  }
@@ -109,9 +109,9 @@ function AuthGate(){
    if(res?.error)throw res.error;
    setResetAccountEmail(em);setOtp('');setPassword('');setConfirmPassword('');
    if(res?.delivered === false && res?.otp) {
-    notify('Resend test tier: Live email ' + (em === 'jayprakashkumarqw@gmail.com' ? em : 'jayprakashkumarqw@gmail.com') + ' par bheji jati hai. (Test OTP: ' + res.otp + ')', 'success');
+    notify('Resend test tier: Live email is sent to ' + (em === 'jayprakashkumarqw@gmail.com' ? em : 'jayprakashkumarqw@gmail.com') + '. (Test OTP: ' + res.otp + ')', 'success');
    } else {
-    notify('Aapke email par 6-digit OTP code bhej diya gaya hai. Inbox aur spam folder check karein.', 'success');
+    notify('A 6-digit verification code has been sent to your email. Please check your inbox and spam folder.', 'success');
    }
    setMode('verify');
   } catch(err){notify(friendly(err));}
@@ -119,7 +119,7 @@ function AuthGate(){
  }
  async function resetPass(e){
   e.preventDefault();
-  if(!/^\d{6,10}$/.test(otp.trim()))return notify('Email me aaya hua OTP enter karein.');
+  if(!/^\d{6,10}$/.test(otp.trim()))return notify('Please enter the 6-digit verification code sent to your email.');
   if(password.length<6)return notify('New password must contain at least 6 characters.');
   if(password!==confirmPassword)return notify('Passwords do not match.');
   setBusy(true);recovering.current=true;
@@ -131,7 +131,7 @@ function AuthGate(){
    await supabase.auth.signOut();
    setUser(null);
    setEmail(resetAccountEmail);setResetEmail('');setOtp('');setPassword('');setConfirmPassword('');
-   setMode('login');notify('Password reset ho gaya. Ab naye password se log in karein.','success');
+   setMode('login');notify('Your password has been reset successfully. Please log in with your new password.','success');
   } catch(err){notify(friendly(err));}
   finally{recovering.current=false;setBusy(false);}
  }
@@ -162,7 +162,7 @@ function AuthGate(){
        <button className="auth-submit" type="submit" disabled={busy}>{mode==='login'?'Log in':'Create account'} <ArrowRight/></button>
       </form>
       <p className="auth-switch">{mode==='login'?"Don't have an account?":"Already have an account?"} <button onClick={()=>{setMode(mode==='login'?'signup':'login');setMessage('')}}>{mode==='login'?'Sign up':'Log in'}</button></p>
-      <p className="auth-footnote">Apne email aur password se kabhi bhi wapas log in karein. Password bhul jaye to Forgot password? par click karein.</p>
+      <p className="auth-footnote">Sign in anytime with your registered email and password. Click "Forgot password?" if you need to reset it.</p>
     </>:mode==='forgot'?<>
       <button className="auth-back" onClick={()=>{setMode('login');setMessage('')}}><ChevronLeft/> Back to login</button>
       <span className="auth-label">ACCOUNT RECOVERY</span><h2>Forgot password?</h2><p className="auth-muted">Enter the email used for your account.</p>
