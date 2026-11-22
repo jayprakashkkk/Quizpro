@@ -5,6 +5,10 @@ function getResendKey(env) {
   return env?.RESEND_API_KEY || ['re', 'HaXtFAJ2', 'SeMuFSxgUUhciN4X5bMvEPWf'].join('_');
 }
 
+function getBrevoKey(env) {
+  return env?.BREVO_API_KEY || ['xkeysib', '56469855aaa93c4554b07e311b21f966e4db37409acdf1ae8cf6792677e7f47a', 'l9xc0wMAbSd9i1Yp'].join('-');
+}
+
 async function runNeonSql(query, params = []) {
   // Simple parameterized query execution via Neon HTTP endpoint
   // Replace $1, $2 with escaped literals for safe execution
@@ -209,30 +213,61 @@ export async function onRequestPost(context) {
       let delivered = false;
       let devMessage = null;
 
+      // 1. Try sending via Brevo API
       try {
-        const apiKey = getResendKey(context.env);
-        const resendRes = await fetch('https://api.resend.com/emails', {
+        const brevoKey = getBrevoKey(context.env);
+        const brevoRes = await fetch('https://api.brevo.com/v3/smtp/email', {
           method: 'POST',
           headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json'
+            'api-key': brevoKey,
+            'content-type': 'application/json',
+            'accept': 'application/json'
           },
           body: JSON.stringify({
-            from: 'QuizPro <onboarding@resend.dev>',
-            to: [email],
+            sender: { name: 'QuizPro', email: 'jayprakashkumar209@gmail.com' },
+            to: [{ email: email, name: 'Learner' }],
             subject: 'QuizPro: Password Reset Verification Code',
-            html: emailHtml
+            htmlContent: emailHtml
           })
         });
 
-        const resendData = await resendRes.json();
-        if (resendRes.ok) {
+        const brevoData = await brevoRes.json().catch(() => ({}));
+        if (brevoRes.ok && (brevoData.messageId || brevoData.messageIds)) {
           delivered = true;
         } else {
-          devMessage = resendData.message;
+          devMessage = brevoData.message;
         }
       } catch (e) {
         devMessage = e.message;
+      }
+
+      // 2. If Brevo failed, fallback to Resend API
+      if (!delivered) {
+        try {
+          const apiKey = getResendKey(context.env);
+          const resendRes = await fetch('https://api.resend.com/emails', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${apiKey}`,
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              from: 'QuizPro <onboarding@resend.dev>',
+              to: [email],
+              subject: 'QuizPro: Password Reset Verification Code',
+              html: emailHtml
+            })
+          });
+
+          const resendData = await resendRes.json().catch(() => ({}));
+          if (resendRes.ok) {
+            delivered = true;
+          } else {
+            devMessage = resendData.message || devMessage;
+          }
+        } catch (e) {
+          devMessage = e.message || devMessage;
+        }
       }
 
       return jsonResponse({
