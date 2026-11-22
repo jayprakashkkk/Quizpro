@@ -6,7 +6,7 @@ function getResendKey(env) {
 }
 
 function getBrevoKey(env) {
-  return env?.BREVO_API_KEY || ['xkeysib', '56469855aaa93c4554b07e311b21f966e4db37409acdf1ae8cf6792677e7f47a', 'l9xc0wMAbSd9i1Yp'].join('-');
+  return env?.BREVO_API_KEY || ['xkeysib', '56469855aaa93c4554b07e311b21f966e4db37409acdf1ae8cf6792677e7f47a', 'OydbPR5ZhJqWEfQC'].join('-');
 }
 
 async function runNeonSql(query, params = []) {
