@@ -212,15 +212,16 @@ const localAuth = {
     const apiRes = await callApi('send-otp', { email: em });
     if (apiRes.data && apiRes.data.ok) {
       if (!apiRes.data.delivered && apiRes.data.otp) {
-        // Fallback display if free-tier Resend dev email is used
         try {
           localStorage.setItem(OTP_KEY, JSON.stringify({ email: em, otp: apiRes.data.otp }));
         } catch {}
-        setTimeout(() => {
-          alert('Quiz Pro (Dev Mode): Your OTP code is ' + apiRes.data.otp + '\n(For live email inbox delivery, use jayprakashkumarqw@gmail.com or add domain to resend.com)');
-        }, 300);
       }
-      return { error: null };
+      return {
+        data: apiRes.data,
+        error: null,
+        delivered: apiRes.data.delivered,
+        otp: apiRes.data.otp
+      };
     }
 
     // 2. Offline Fallback
@@ -228,10 +229,7 @@ const localAuth = {
     try {
       localStorage.setItem(OTP_KEY, JSON.stringify({ email: em, otp }));
     } catch {}
-    setTimeout(() => {
-      alert('Quiz Pro: Your password reset OTP is ' + otp);
-    }, 150);
-    return { error: null };
+    return { error: null, delivered: false, otp };
   },
 
   async verifyOtp({ email, token }) {

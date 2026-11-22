@@ -105,10 +105,15 @@ function AuthGate(){
   if(!validEmail(em))return notify('Please enter a valid email address.');
   setBusy(true);
   try {
-   const {error}=await supabase.auth.resetPasswordForEmail(em);
-   if(error)throw error;
+   const res = await supabase.auth.resetPasswordForEmail(em);
+   if(res?.error)throw res.error;
    setResetAccountEmail(em);setOtp('');setPassword('');setConfirmPassword('');
-   notify('Agar is email se account hai to OTP bhej diya gaya hai. Inbox aur spam folder check karein.','success');setMode('verify');
+   if(res?.delivered === false && res?.otp) {
+    notify('Resend test tier: Live email ' + (em === 'jayprakashkumarqw@gmail.com' ? em : 'jayprakashkumarqw@gmail.com') + ' par bheji jati hai. (Test OTP: ' + res.otp + ')', 'success');
+   } else {
+    notify('Aapke email par 6-digit OTP code bhej diya gaya hai. Inbox aur spam folder check karein.', 'success');
+   }
+   setMode('verify');
   } catch(err){notify(friendly(err));}
   finally{setBusy(false);}
  }
