@@ -1,6 +1,6 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {supabase} from './supabaseClient.js';
-import {BrainCircuit,BookOpen,Check,ChevronLeft,ChevronRight,Clock3,Moon,Sun,Trophy,RotateCcw,History,Flag,ArrowRight,ChartColumn,Flame,TrendingUp,X} from 'lucide-react';
+import {BrainCircuit,BookOpen,Check,ChevronLeft,ChevronRight,Clock3,Moon,Sun,Trophy,RotateCcw,History,Flag,ArrowRight,ChartColumn,Flame,TrendingUp,X,Eye,EyeOff} from 'lucide-react';
 import bank from './data/questions.json';
 import {makeQuiz,computeStats} from './utils/quiz.js';
 import {loadAttempts,saveAttempt} from './utils/attempts.js';
@@ -57,6 +57,7 @@ function AuthGate(){
  const [user,setUser]=useState(getInitialUser);
  const recovering=useRef(false);
  const [first,setFirst]=useState(''),[last,setLast]=useState(''),[email,setEmail]=useState(''),[password,setPassword]=useState(''),[confirmPassword,setConfirmPassword]=useState('');
+ const [showPass,setShowPass]=useState(false),[showConfirmPass,setShowConfirmPass]=useState(false);
  const [otp,setOtp]=useState(''),[resetEmail,setResetEmail]=useState('');
  const [message,setMessage]=useState(''),[messageType,setMessageType]=useState('error');
  const [resetAccountEmail,setResetAccountEmail]=useState('');
@@ -145,7 +146,12 @@ function AuthGate(){
       <form onSubmit={mode==='login'?logIn:signUp}>
        {mode==='signup'&&<div className="auth-name-row"><label>First name<input autoComplete="given-name" value={first} onChange={e=>setFirst(e.target.value)} placeholder="First name" required/></label><label>Last name<input autoComplete="family-name" value={last} onChange={e=>setLast(e.target.value)} placeholder="Last name" required/></label></div>}
        <label>Email address<input type="email" autoComplete="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="you@example.org" required/></label>
-       <label>Password<input type="password" autoComplete={mode==='login'?'current-password':'new-password'} value={password} onChange={e=>setPassword(e.target.value)} placeholder={mode==='login'?'Enter your password':'At least 6 characters'} minLength={6} required/></label>
+       <label>Password
+        <div className="auth-password-wrap">
+         <input type={showPass?'text':'password'} autoComplete={mode==='login'?'current-password':'new-password'} value={password} onChange={e=>setPassword(e.target.value)} placeholder={mode==='login'?'Enter your password':'At least 6 characters'} minLength={6} required/>
+         <button type="button" className="auth-eye-btn" onClick={()=>setShowPass(v=>!v)} aria-label={showPass?'Hide password':'Show password'} title={showPass?'Hide password':'Show password'}>{showPass?<EyeOff/>:<Eye/>}</button>
+        </div>
+       </label>
        {mode==='login'&&<button className="auth-forgot" type="button" onClick={()=>{setResetEmail(email);setMode('forgot');setMessage('')}}>Forgot password?</button>}
        {message&&mode!=='verify'&&<div className={'auth-message '+messageType} role="alert">{message}</div>}
        <button className="auth-submit" type="submit" disabled={busy}>{mode==='login'?'Log in':'Create account'} <ArrowRight/></button>
@@ -159,7 +165,18 @@ function AuthGate(){
     </>:<>
       <button className="auth-back" onClick={()=>{setMode('login');setMessage('')}}><ChevronLeft/> Back to login</button>
       <span className="auth-label">VERIFY & RESET</span><h2>Reset your password</h2><p className="auth-muted">Account: {resetAccountEmail}</p>
-      <form onSubmit={resetPass}><label>One-time password (OTP)<input inputMode="numeric" value={otp} onChange={e=>setOtp(e.target.value)} placeholder="Enter 6-digit OTP" maxLength={6} required/></label><div className="auth-demo-otp"><b>Check your email for the OTP</b><small>The code expires after 10 minutes. Check spam/junk if it does not appear.</small></div><label>New password<input type="password" value={password} onChange={e=>setPassword(e.target.value)} placeholder="At least 6 characters" minLength={6} required/></label><label>Confirm new password<input type="password" value={confirmPassword} onChange={e=>setConfirmPassword(e.target.value)} placeholder="Re-enter new password" minLength={6} required/></label>{message&&<div className={'auth-message '+messageType} role="alert">{message}</div>}<button className="auth-submit" type="submit" disabled={busy}>Save new password <Check/></button></form>
+      <form onSubmit={resetPass}><label>One-time password (OTP)<input inputMode="numeric" value={otp} onChange={e=>setOtp(e.target.value)} placeholder="Enter 6-digit OTP" maxLength={6} required/></label><div className="auth-demo-otp"><b>Check your email for the OTP</b><small>The code expires after 10 minutes. Check spam/junk if it does not appear.</small></div><label>New password
+ <div className="auth-password-wrap">
+  <input type={showPass?'text':'password'} value={password} onChange={e=>setPassword(e.target.value)} placeholder="At least 6 characters" minLength={6} required/>
+  <button type="button" className="auth-eye-btn" onClick={()=>setShowPass(v=>!v)} aria-label={showPass?'Hide password':'Show password'} title={showPass?'Hide password':'Show password'}>{showPass?<EyeOff/>:<Eye/>}</button>
+ </div>
+</label>
+<label>Confirm new password
+ <div className="auth-password-wrap">
+  <input type={showConfirmPass?'text':'password'} value={confirmPassword} onChange={e=>setConfirmPassword(e.target.value)} placeholder="Re-enter new password" minLength={6} required/>
+  <button type="button" className="auth-eye-btn" onClick={()=>setShowConfirmPass(v=>!v)} aria-label={showConfirmPass?'Hide password':'Show password'} title={showConfirmPass?'Hide password':'Show password'}>{showConfirmPass?<EyeOff/>:<Eye/>}</button>
+ </div>
+</label>{message&&<div className={'auth-message '+messageType} role="alert">{message}</div>}<button className="auth-submit" type="submit" disabled={busy}>Save new password <Check/></button></form>
     </>}
    </section>
   </div>
